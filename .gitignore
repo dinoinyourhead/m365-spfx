@@ -1,0 +1,11 @@
+node_modules/
+dist/
+lib/
+temp/
+coverage/
+*.log
+.DS_Store
+sharepoint/solution/*.sppkg
+config/package-solution.json.backup
+.vscode/
+*.sppkg

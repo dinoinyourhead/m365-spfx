@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "m-365-groups-solar-system-client-side-solution",
+    "id": "c5973ff4-7fd1-4713-b986-dd56687e154f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Group.Read.All"
+      }
+    ],
+    "metadata": {
+      "shortDescription": {
+        "default": "m365-groups-solar-system description"
+      },
+      "longDescription": {
+        "default": "m365-groups-solar-system description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "m-365-groups-solar-system Feature",
+        "description": "The feature that activates elements of the m-365-groups-solar-system solution.",
+        "id": "eba24f46-9df6-4f93-aac8-369d4535fac3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/m-365-groups-solar-system.sppkg"
+  }
+}

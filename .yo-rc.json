@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "m365-groups-solar-system",
+    "environment": "spo",
+    "componentType": "webpart",
+    "template": "react",
+    "componentName": "GroupsSolarSystem",
+    "componentDescription": "Solar system visualization of M365 groups",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "24.4.1",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "m-365-groups-solar-system",
+    "libraryId": "c5973ff4-7fd1-4713-b986-dd56687e154f",
+    "packageManager": "npm",
+    "solutionShortDescription": "m365-groups-solar-system description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  }
+}
