@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styles from './GroupsSolarSystem.module.scss';
 import type { IGroupsSolarSystemProps } from './IGroupsSolarSystemProps';
-import { IGraphData, IGroupNode } from '../../../services/IGraphService';
+import { IGraphData, IGroupNode, IMember } from '../../../services/IGraphService';
 import SolarLayout from './SolarSystem/SolarLayout';
 import MeshLayout from './SolarSystem/MeshLayout';
 
@@ -12,6 +12,11 @@ export interface IGroupsSolarSystemState {
   width: number;
   height: number;
 }
+
+const FilterModes = {
+  SPECIFIC_IDS: 'SpecificIds',
+  URL_PREFIX: 'UrlPrefix'
+};
 
 export default class GroupsSolarSystem extends React.Component<IGroupsSolarSystemProps, IGroupsSolarSystemState> {
   private _containerRef = React.createRef<HTMLDivElement>();
@@ -73,9 +78,9 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
       let groups: IGroupNode[];
 
       // Check filter mode
-      if (this.props.filterMode === 'SpecificIds') {
+      if (this.props.filterMode === FilterModes.SPECIFIC_IDS) {
         groups = await this.props.graphService.getGroupsByIds(this.props.groupIds);
-      } else if (this.props.filterMode === 'UrlPrefix' && this.props.urlPrefix) {
+      } else if (this.props.filterMode === FilterModes.URL_PREFIX && this.props.urlPrefix) {
         groups = await this.props.graphService.getGroupsBySiteUrlPrefix(this.props.urlPrefix);
       } else {
         // Default to All / My Groups
@@ -103,13 +108,10 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
         isUser: true,
         photoBlobUrl: this.props.useCustomCenter
           ? this.props.customCenterImageUrl
-          : undefined
+          : undefined,
+        fx: 0,
+        fy: 0
       };
-      // Explicitly add fx/fy to the user node object
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (userNode as any).fx = 0;
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (userNode as any).fy = 0;
 
       const nodes: IGroupNode[] = [userNode, ...groupsWithMembers];
       const links = groupsWithMembers.map(g => ({
@@ -128,8 +130,7 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
     }
   }
 
-  private onFetchMembers = (groupId: string): Promise<any[]> => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  private onFetchMembers = (groupId: string): Promise<IMember[]> => {
     return this.props.graphService.getGroupMembers(groupId);
   }
 
@@ -137,13 +138,11 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
     return this.props.graphService.getGroupSiteUrl(groupId);
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private handleNodeHover = (node: any): void => {
+  private handleNodeHover = (node: IGroupNode): void => {
     // Placeholder
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private handleNodeClick = async (node: any): Promise<void> => {
+  private handleNodeClick = async (node: IGroupNode): Promise<void> => {
     if (node.isUser) return;
     try {
       const url = await this.props.graphService.getGroupSiteUrl(node.id);
@@ -193,8 +192,8 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
                 fontColor={this.props.fontColor}
                 onFetchMembers={(gid) => this.onFetchMembers(gid)}
                 onGetSiteUrl={(gid) => this.onGetSiteUrl(gid)}
-                onNodeHover={(n) => this.handleNodeHover(n)}
-                onNodeClick={(n) => this.handleNodeClick(n)}
+                onNodeHover={(n) => n && this.handleNodeHover(n)}
+                onNodeClick={(n) => n && this.handleNodeClick(n)}
               />
             ) : (
               <SolarLayout
@@ -219,8 +218,8 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
                 fontColor={this.props.fontColor}
                 onFetchMembers={(gid) => this.onFetchMembers(gid)}
                 onGetSiteUrl={(gid) => this.onGetSiteUrl(gid)}
-                onNodeHover={(n) => this.handleNodeHover(n)}
-                onNodeClick={(n) => this.handleNodeClick(n)}
+                onNodeHover={(n) => n && this.handleNodeHover(n)}
+                onNodeClick={(n) => n && this.handleNodeClick(n)}
               />
             )
           )}

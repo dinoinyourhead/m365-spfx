@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".groupsSolarSystem_ebcf2827{color:\"[theme:bodyText, default: #323130]\";color:var(--bodyText);overflow:hidden;padding:1em}.groupsSolarSystem_ebcf2827.teams_ebcf2827{font-family:Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif}.welcome_ebcf2827{text-align:center}.welcomeImage_ebcf2827{max-width:420px;width:100%}.links_ebcf2827 a{color:\"[theme:link, default:#03787c]\";color:var(--link);text-decoration:none}.links_ebcf2827 a:hover{color:\"[theme:linkHovered, default: #014446]\";color:var(--linkHovered);text-decoration:underline}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vVXNlcnMvZG9taW5pa25vbHRlLy5nZW1pbmkvYW50aWdyYXZpdHkvc2NyYXRjaC9tMzY1LWdyb3Vwcy1zb2xhci1zeXN0ZW0vbTM2NS1ncm91cHMtc29sYXItc3lzdGVtL3NyYy93ZWJwYXJ0cy9ncm91cHNTb2xhclN5c3RlbS9jb21wb25lbnRzL0dyb3Vwc1NvbGFyU3lzdGVtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLDRCQUdFLDBDQUFBLENBQ0EscUJBQUEsQ0FIQSxlQUFBLENBQ0EsV0FFQSxDQUNBLDJDQUNFLHNGQUFBLENBSUosa0JBQ0UsaUJBQUEsQ0FHRix1QkFFRSxlQUFBLENBREEsVUFDQSxDQUlBLGtCQUVFLHFDQUFBLENBQ0EsaUJBQUEsQ0FGQSxvQkFFQSxDQUVBLHdCQUVFLDZDQUFBLENBQ0Esd0JBQUEsQ0FGQSx5QkFFQSIsImZpbGUiOiJHcm91cHNTb2xhclN5c3RlbS5tb2R1bGUuY3NzIn0= */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".groupsSolarSystem_ebcf2827{color:\"[theme:bodyText, default: #323130]\";color:var(--bodyText);overflow:hidden;padding:1em}.groupsSolarSystem_ebcf2827.teams_ebcf2827{font-family:Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif}.welcome_ebcf2827{text-align:center}.welcomeImage_ebcf2827{max-width:420px;width:100%}.links_ebcf2827 a{color:\"[theme:link, default:#03787c]\";color:var(--link);text-decoration:none}.links_ebcf2827 a:hover{color:\"[theme:linkHovered, default: #014446]\";color:var(--linkHovered);text-decoration:underline}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vYXBwL3NyYy93ZWJwYXJ0cy9ncm91cHNTb2xhclN5c3RlbS9jb21wb25lbnRzL0dyb3Vwc1NvbGFyU3lzdGVtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLDRCQUdFLDBDQUFBLENBQ0EscUJBQUEsQ0FIQSxlQUFBLENBQ0EsV0FFQSxDQUNBLDJDQUNFLHNGQUFBLENBSUosa0JBQ0UsaUJBQUEsQ0FHRix1QkFFRSxlQUFBLENBREEsVUFDQSxDQUlBLGtCQUVFLHFDQUFBLENBQ0EsaUJBQUEsQ0FGQSxvQkFFQSxDQUVBLHdCQUVFLDZDQUFBLENBQ0Esd0JBQUEsQ0FGQSx5QkFFQSIsImZpbGUiOiJHcm91cHNTb2xhclN5c3RlbS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".tooltip_675521f1{background:#fff;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.15);font-family:Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;max-width:300px;padding:16px;pointer-events:none;position:fixed;z-index:10000}.header_675521f1{margin-bottom:8px}.title_675521f1{color:#323130;font-size:16px;font-weight:600;line-height:1.3;margin:0}.description_675521f1{color:#605e5c;font-size:13px;line-height:1.4;margin:0 0 12px}.members_675521f1{border-top:1px solid #edebe9;padding-top:12px}.memberCount_675521f1{color:#8a8886;font-size:12px;font-weight:500;margin-bottom:8px}.avatars_675521f1{display:flex;flex-wrap:wrap;gap:6px}.avatar_675521f1{align-items:center;background:#f3f2f1;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.1);display:flex;height:32px;justify-content:center;overflow:hidden;width:32px}.avatar_675521f1 img{height:100%;object-fit:cover;width:100%}.avatarInitials_675521f1{color:#605e5c;font-size:14px;font-weight:600}.avatarMore_675521f1{color:#605e5c;font-size:11px;font-weight:600}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vVXNlcnMvZG9taW5pa25vbHRlLy5nZW1pbmkvYW50aWdyYXZpdHkvc2NyYXRjaC9tMzY1LWdyb3Vwcy1zb2xhci1zeXN0ZW0vbTM2NS1ncm91cHMtc29sYXItc3lzdGVtL3NyYy93ZWJwYXJ0cy9ncm91cHNTb2xhclN5c3RlbS9jb21wb25lbnRzL1NvbGFyU3lzdGVtL0dyb3VwVG9vbHRpcC5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxrQkFFSSxlQUFBLENBQ0EsaUJBQUEsQ0FDQSxxQ0FBQSxDQUtBLHNGQUFBLENBSEEsZUFBQSxDQURBLFlBQUEsQ0FHQSxtQkFBQSxDQVBBLGNBQUEsQ0FNQSxhQUVBLENBR0osaUJBQ0ksaUJBQUEsQ0FHSixnQkFJSSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBSkEsUUFJQSxDQUdKLHNCQUdJLGFBQUEsQ0FEQSxjQUFBLENBRUEsZUFBQSxDQUhBLGVBR0EsQ0FHSixrQkFDSSw0QkFBQSxDQUNBLGdCQUFBLENBR0osc0JBRUksYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsaUJBQ0EsQ0FHSixrQkFDSSxZQUFBLENBRUEsY0FBQSxDQURBLE9BQ0EsQ0FHSixpQkFPSSxrQkFBQSxDQUZBLGtCQUFBLENBSUEscUJBQUEsQ0FOQSxpQkFBQSxDQU9BLG1DQUFBLENBSkEsWUFBQSxDQUpBLFdBQUEsQ0FNQSxzQkFBQSxDQUpBLGVBQUEsQ0FIQSxVQVNBLENBRUEscUJBRUksV0FBQSxDQUNBLGdCQUFBLENBRkEsVUFFQSxDQUlSLHlCQUdJLGFBQUEsQ0FGQSxjQUFBLENBQ0EsZUFDQSxDQUdKLHFCQUdJLGFBQUEsQ0FGQSxjQUFBLENBQ0EsZUFDQSIsImZpbGUiOiJHcm91cFRvb2x0aXAubW9kdWxlLmNzcyJ9 */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".tooltip_675521f1{background:#fff;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.15);font-family:Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;max-width:300px;padding:16px;pointer-events:none;position:fixed;z-index:10000}.header_675521f1{margin-bottom:8px}.title_675521f1{color:#323130;font-size:16px;font-weight:600;line-height:1.3;margin:0}.description_675521f1{color:#605e5c;font-size:13px;line-height:1.4;margin:0 0 12px}.members_675521f1{border-top:1px solid #edebe9;padding-top:12px}.memberCount_675521f1{color:#8a8886;font-size:12px;font-weight:500;margin-bottom:8px}.avatars_675521f1{display:flex;flex-wrap:wrap;gap:6px}.avatar_675521f1{align-items:center;background:#f3f2f1;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,.1);display:flex;height:32px;justify-content:center;overflow:hidden;width:32px}.avatar_675521f1 img{height:100%;object-fit:cover;width:100%}.avatarInitials_675521f1{color:#605e5c;font-size:14px;font-weight:600}.avatarMore_675521f1{color:#605e5c;font-size:11px;font-weight:600}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vYXBwL3NyYy93ZWJwYXJ0cy9ncm91cHNTb2xhclN5c3RlbS9jb21wb25lbnRzL1NvbGFyU3lzdGVtL0dyb3VwVG9vbHRpcC5tb2R1bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxrQkFFSSxlQUFBLENBQ0EsaUJBQUEsQ0FDQSxxQ0FBQSxDQUtBLHNGQUFBLENBSEEsZUFBQSxDQURBLFlBQUEsQ0FHQSxtQkFBQSxDQVBBLGNBQUEsQ0FNQSxhQUVBLENBR0osaUJBQ0ksaUJBQUEsQ0FHSixnQkFJSSxhQUFBLENBRkEsY0FBQSxDQUNBLGVBQUEsQ0FFQSxlQUFBLENBSkEsUUFJQSxDQUdKLHNCQUdJLGFBQUEsQ0FEQSxjQUFBLENBRUEsZUFBQSxDQUhBLGVBR0EsQ0FHSixrQkFDSSw0QkFBQSxDQUNBLGdCQUFBLENBR0osc0JBRUksYUFBQSxDQURBLGNBQUEsQ0FHQSxlQUFBLENBREEsaUJBQ0EsQ0FHSixrQkFDSSxZQUFBLENBRUEsY0FBQSxDQURBLE9BQ0EsQ0FHSixpQkFPSSxrQkFBQSxDQUZBLGtCQUFBLENBSUEscUJBQUEsQ0FOQSxpQkFBQSxDQU9BLG1DQUFBLENBSkEsWUFBQSxDQUpBLFdBQUEsQ0FNQSxzQkFBQSxDQUpBLGVBQUEsQ0FIQSxVQVNBLENBRUEscUJBRUksV0FBQSxDQUNBLGdCQUFBLENBRkEsVUFFQSxDQUlSLHlCQUdJLGFBQUEsQ0FGQSxjQUFBLENBQ0EsZUFDQSxDQUdKLHFCQUdJLGFBQUEsQ0FGQSxjQUFBLENBQ0EsZUFDQSIsImZpbGUiOiJHcm91cFRvb2x0aXAubW9kdWxlLmNzcyJ9 */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -111,6 +111,11 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var API_ENDPOINTS = {
+    MY_GROUPS: '/me/transitiveMemberOf/microsoft.graph.group',
+    GROUPS: '/groups',
+    USERS: '/users'
+};
 var GraphService = /** @class */ (function () {
     function GraphService(_msGraphClientFactory) {
         this._msGraphClientFactory = _msGraphClientFactory;
@@ -130,17 +135,16 @@ var GraphService = /** @class */ (function () {
             var client, response, groups, error_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.getClient()];
+                    case 0:
+                        _a.trys.push([0, 4, , 5]);
+                        return [4 /*yield*/, this.getClient()];
                     case 1:
                         client = _a.sent();
-                        _a.label = 2;
-                    case 2:
-                        _a.trys.push([2, 5, , 6]);
-                        return [4 /*yield*/, client.api('/me/transitiveMemberOf/microsoft.graph.group')
+                        return [4 /*yield*/, client.api(API_ENDPOINTS.MY_GROUPS)
                                 .select('id,displayName,mailNickname,description')
                                 .top(999)
                                 .get()];
-                    case 3:
+                    case 2:
                         response = _a.sent();
                         groups = response.value.map(function (g) { return ({
                             id: g.id,
@@ -148,39 +152,41 @@ var GraphService = /** @class */ (function () {
                             description: g.description,
                             mailNickname: g.mailNickname
                         }); });
-                        return [4 /*yield*/, this.enrichGroupsWithPhotos(groups, client)];
-                    case 4:
+                        return [4 /*yield*/, this.enrichEntitiesWithPhotos(groups, client, 'group')];
+                    case 3:
                         _a.sent();
                         return [2 /*return*/, groups];
-                    case 5:
+                    case 4:
                         error_1 = _a.sent();
                         console.error("Error fetching my groups", error_1);
                         return [2 /*return*/, []];
-                    case 6: return [2 /*return*/];
+                    case 5: return [2 /*return*/];
                 }
             });
         });
     };
     GraphService.prototype.getGroupsByIds = function (ids) {
         return __awaiter(this, void 0, void 0, function () {
-            var client, groups;
+            var client_1, groups_1, error_2;
             var _this = this;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.getClient()];
+                    case 0:
+                        _a.trys.push([0, 4, , 5]);
+                        return [4 /*yield*/, this.getClient()];
                     case 1:
-                        client = _a.sent();
-                        groups = [];
+                        client_1 = _a.sent();
+                        groups_1 = [];
                         return [4 /*yield*/, Promise.all(ids.map(function (id) { return __awaiter(_this, void 0, void 0, function () {
                                 var response, e_1;
                                 return __generator(this, function (_a) {
                                     switch (_a.label) {
                                         case 0:
                                             _a.trys.push([0, 2, , 3]);
-                                            return [4 /*yield*/, client.api("/groups/".concat(id)).select('id,displayName,mailNickname,description').get()];
+                                            return [4 /*yield*/, client_1.api("".concat(API_ENDPOINTS.GROUPS, "/").concat(id)).select('id,displayName,mailNickname,description').get()];
                                         case 1:
                                             response = _a.sent();
-                                            groups.push({
+                                            groups_1.push({
                                                 id: response.id,
                                                 displayName: response.displayName,
                                                 description: response.description,
@@ -197,10 +203,15 @@ var GraphService = /** @class */ (function () {
                             }); }))];
                     case 2:
                         _a.sent();
-                        return [4 /*yield*/, this.enrichGroupsWithPhotos(groups, client)];
+                        return [4 /*yield*/, this.enrichEntitiesWithPhotos(groups_1, client_1, 'group')];
                     case 3:
                         _a.sent();
-                        return [2 /*return*/, groups];
+                        return [2 /*return*/, groups_1];
+                    case 4:
+                        error_2 = _a.sent();
+                        console.error("Error fetching groups by ids", error_2);
+                        return [2 /*return*/, []];
+                    case 5: return [2 /*return*/];
                 }
             });
         });
@@ -210,18 +221,17 @@ var GraphService = /** @class */ (function () {
             var client, response, groups, e_2;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.getClient()];
+                    case 0:
+                        _a.trys.push([0, 4, , 5]);
+                        return [4 /*yield*/, this.getClient()];
                     case 1:
                         client = _a.sent();
-                        _a.label = 2;
-                    case 2:
-                        _a.trys.push([2, 5, , 6]);
-                        return [4 /*yield*/, client.api('/groups')
+                        return [4 /*yield*/, client.api(API_ENDPOINTS.GROUPS)
                                 .filter("startsWith(mailNickname, '".concat(prefix, "')"))
                                 .select('id,displayName,mailNickname,description')
                                 .top(999)
                                 .get()];
-                    case 3:
+                    case 2:
                         response = _a.sent();
                         groups = response.value.map(function (g) { return ({
                             id: g.id,
@@ -229,113 +239,96 @@ var GraphService = /** @class */ (function () {
                             description: g.description,
                             mailNickname: g.mailNickname
                         }); });
-                        return [4 /*yield*/, this.enrichGroupsWithPhotos(groups, client)];
-                    case 4:
+                        return [4 /*yield*/, this.enrichEntitiesWithPhotos(groups, client, 'group')];
+                    case 3:
                         _a.sent();
                         return [2 /*return*/, groups];
-                    case 5:
+                    case 4:
                         e_2 = _a.sent();
                         console.error("Error fetching groups by prefix", e_2);
                         return [2 /*return*/, []];
-                    case 6: return [2 /*return*/];
+                    case 5: return [2 /*return*/];
                 }
             });
         });
     };
     GraphService.prototype.getGroupMembers = function (groupId) {
         return __awaiter(this, void 0, void 0, function () {
-            var client, membersResponse, members, error_2;
-            var _this = this;
+            var client, membersResponse, members, error_3;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.getClient()];
+                    case 0:
+                        _a.trys.push([0, 4, , 5]);
+                        return [4 /*yield*/, this.getClient()];
                     case 1:
                         client = _a.sent();
-                        _a.label = 2;
-                    case 2:
-                        _a.trys.push([2, 5, , 6]);
-                        return [4 /*yield*/, client.api("/groups/".concat(groupId, "/members"))
+                        return [4 /*yield*/, client.api("".concat(API_ENDPOINTS.GROUPS, "/").concat(groupId, "/members"))
                                 .top(5)
                                 .select('id,displayName')
                                 .get()];
-                    case 3:
+                    case 2:
                         membersResponse = _a.sent();
                         members = membersResponse.value.map(function (m) { return ({
                             id: m.id,
                             displayName: m.displayName
                         }); });
-                        return [4 /*yield*/, Promise.all(members.map(function (member) { return __awaiter(_this, void 0, void 0, function () {
-                                var photoBlob, e_3;
-                                return __generator(this, function (_a) {
-                                    switch (_a.label) {
-                                        case 0:
-                                            _a.trys.push([0, 2, , 3]);
-                                            return [4 /*yield*/, client.api("/users/".concat(member.id, "/photo/$value")).responseType('blob').get()];
-                                        case 1:
-                                            photoBlob = _a.sent();
-                                            member.photoBlobUrl = URL.createObjectURL(photoBlob);
-                                            return [3 /*break*/, 3];
-                                        case 2:
-                                            e_3 = _a.sent();
-                                            return [3 /*break*/, 3];
-                                        case 3: return [2 /*return*/];
-                                    }
-                                });
-                            }); }))];
-                    case 4:
+                        return [4 /*yield*/, this.enrichEntitiesWithPhotos(members, client, 'user')];
+                    case 3:
                         _a.sent();
                         return [2 /*return*/, members];
-                    case 5:
-                        error_2 = _a.sent();
-                        console.error("Error fetching members for group ".concat(groupId), error_2);
+                    case 4:
+                        error_3 = _a.sent();
+                        console.error("Error fetching members for group ".concat(groupId), error_3);
                         return [2 /*return*/, []];
-                    case 6: return [2 /*return*/];
+                    case 5: return [2 /*return*/];
                 }
             });
         });
     };
     GraphService.prototype.getGroupSiteUrl = function (groupId) {
         return __awaiter(this, void 0, void 0, function () {
-            var client, response, error_3;
+            var client, response, error_4;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.getClient()];
+                    case 0:
+                        _a.trys.push([0, 3, , 4]);
+                        return [4 /*yield*/, this.getClient()];
                     case 1:
                         client = _a.sent();
-                        _a.label = 2;
+                        return [4 /*yield*/, client.api("".concat(API_ENDPOINTS.GROUPS, "/").concat(groupId, "/sites/root")).select('webUrl').get()];
                     case 2:
-                        _a.trys.push([2, 4, , 5]);
-                        return [4 /*yield*/, client.api("/groups/".concat(groupId, "/sites/root")).select('webUrl').get()];
-                    case 3:
                         response = _a.sent();
                         return [2 /*return*/, response.webUrl];
-                    case 4:
-                        error_3 = _a.sent();
-                        console.warn("Error fetching site URL for group ".concat(groupId), error_3);
+                    case 3:
+                        error_4 = _a.sent();
+                        console.warn("Error fetching site URL for group ".concat(groupId), error_4);
                         return [2 /*return*/, ''];
-                    case 5: return [2 /*return*/];
+                    case 4: return [2 /*return*/];
                 }
             });
         });
     };
-    GraphService.prototype.enrichGroupsWithPhotos = function (groups, client) {
+    GraphService.prototype.enrichEntitiesWithPhotos = function (entities, client, type) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, Promise.all(groups.map(function (group) { return __awaiter(_this, void 0, void 0, function () {
-                            var photoBlob, e_4;
+                    case 0: return [4 /*yield*/, Promise.all(entities.map(function (entity) { return __awaiter(_this, void 0, void 0, function () {
+                            var endpoint, photoBlob, e_3;
                             return __generator(this, function (_a) {
                                 switch (_a.label) {
                                     case 0:
                                         _a.trys.push([0, 2, , 3]);
-                                        return [4 /*yield*/, client.api("/groups/".concat(group.id, "/photo/$value")).responseType('blob').get()];
+                                        endpoint = type === 'group'
+                                            ? "".concat(API_ENDPOINTS.GROUPS, "/").concat(entity.id, "/photo/$value")
+                                            : "".concat(API_ENDPOINTS.USERS, "/").concat(entity.id, "/photo/$value");
+                                        return [4 /*yield*/, client.api(endpoint).responseType('blob').get()];
                                     case 1:
                                         photoBlob = _a.sent();
-                                        group.photoBlobUrl = URL.createObjectURL(photoBlob);
+                                        entity.photoBlobUrl = URL.createObjectURL(photoBlob);
                                         return [3 /*break*/, 3];
                                     case 2:
-                                        e_4 = _a.sent();
+                                        e_3 = _a.sent();
                                         return [3 /*break*/, 3];
                                     case 3: return [2 /*return*/];
                                 }
@@ -502,23 +495,24 @@ var __spreadArray = (undefined && undefined.__spreadArray) || function (to, from
 
 
 
+var FilterModes = {
+    SPECIFIC_IDS: 'SpecificIds',
+    URL_PREFIX: 'UrlPrefix'
+};
 var GroupsSolarSystem = /** @class */ (function (_super) {
     __extends(GroupsSolarSystem, _super);
     function GroupsSolarSystem(props) {
         var _this = _super.call(this, props) || this;
         _this._containerRef = react__WEBPACK_IMPORTED_MODULE_0__.createRef();
         _this.onFetchMembers = function (groupId) {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             return _this.props.graphService.getGroupMembers(groupId);
         };
         _this.onGetSiteUrl = function (groupId) {
             return _this.props.graphService.getGroupSiteUrl(groupId);
         };
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         _this.handleNodeHover = function (node) {
             // Placeholder
         };
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         _this.handleNodeClick = function (node) { return __awaiter(_this, void 0, void 0, function () {
             var url, e_1;
             return __generator(this, function (_a) {
@@ -600,13 +594,13 @@ var GroupsSolarSystem = /** @class */ (function (_super) {
                     case 1:
                         _a.trys.push([1, 9, , 10]);
                         groups = void 0;
-                        if (!(this.props.filterMode === 'SpecificIds')) return [3 /*break*/, 3];
+                        if (!(this.props.filterMode === FilterModes.SPECIFIC_IDS)) return [3 /*break*/, 3];
                         return [4 /*yield*/, this.props.graphService.getGroupsByIds(this.props.groupIds)];
                     case 2:
                         groups = _a.sent();
                         return [3 /*break*/, 7];
                     case 3:
-                        if (!(this.props.filterMode === 'UrlPrefix' && this.props.urlPrefix)) return [3 /*break*/, 5];
+                        if (!(this.props.filterMode === FilterModes.URL_PREFIX && this.props.urlPrefix)) return [3 /*break*/, 5];
                         return [4 /*yield*/, this.props.graphService.getGroupsBySiteUrlPrefix(this.props.urlPrefix)];
                     case 4:
                         groups = _a.sent();
@@ -644,13 +638,10 @@ var GroupsSolarSystem = /** @class */ (function (_super) {
                             isUser: true,
                             photoBlobUrl: this.props.useCustomCenter
                                 ? this.props.customCenterImageUrl
-                                : undefined
+                                : undefined,
+                            fx: 0,
+                            fy: 0
                         };
-                        // Explicitly add fx/fy to the user node object
-                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        userNode.fx = 0;
-                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        userNode.fy = 0;
                         nodes = __spreadArray([userNode], groupsWithMembers, true);
                         links = groupsWithMembers.map(function (g) { return ({
                             source: 'me',
@@ -682,7 +673,7 @@ var GroupsSolarSystem = /** @class */ (function (_super) {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { ref: this._containerRef, style: { width: '100%', height: "".concat(height, "px"), position: 'relative' } },
                 loading && react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Loading your solar system..."),
                 error && react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { color: 'red' } }, error),
-                !loading && !error && (layoutMode === 'Mesh' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolarSystem_MeshLayout__WEBPACK_IMPORTED_MODULE_3__["default"], { data: graphData, width: width, height: height, groupNodeSize: groupNodeSize, baseFontSize: baseFontSize, linkLineType: (this.props.linkLineType || 'solid'), enableShadows: this.props.enableShadows, shadowColor: this.props.shadowColor, shadowBlur: this.props.shadowBlur, shadowOffsetX: this.props.shadowOffsetX, shadowOffsetY: this.props.shadowOffsetY, backgroundType: this.props.backgroundType, backgroundColor: this.props.backgroundColor, backgroundImageUrl: this.props.backgroundImageUrl, fontColor: this.props.fontColor, onFetchMembers: function (gid) { return _this.onFetchMembers(gid); }, onGetSiteUrl: function (gid) { return _this.onGetSiteUrl(gid); }, onNodeHover: function (n) { return _this.handleNodeHover(n); }, onNodeClick: function (n) { return _this.handleNodeClick(n); } })) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolarSystem_SolarLayout__WEBPACK_IMPORTED_MODULE_2__["default"], { data: graphData, width: width, height: height, groupNodeSize: groupNodeSize, baseFontSize: baseFontSize, animationMode: animationMode, animationSpeed: animationSpeed, centerNodeSize: centerNodeSize, showUserLabel: showUserLabel, linkLineType: this.props.linkLineType, enableShadows: this.props.enableShadows, shadowColor: this.props.shadowColor, shadowBlur: this.props.shadowBlur, shadowOffsetX: this.props.shadowOffsetX, shadowOffsetY: this.props.shadowOffsetY, backgroundType: this.props.backgroundType, backgroundColor: this.props.backgroundColor, backgroundImageUrl: this.props.backgroundImageUrl, fontColor: this.props.fontColor, onFetchMembers: function (gid) { return _this.onFetchMembers(gid); }, onGetSiteUrl: function (gid) { return _this.onGetSiteUrl(gid); }, onNodeHover: function (n) { return _this.handleNodeHover(n); }, onNodeClick: function (n) { return _this.handleNodeClick(n); } }))))));
+                !loading && !error && (layoutMode === 'Mesh' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolarSystem_MeshLayout__WEBPACK_IMPORTED_MODULE_3__["default"], { data: graphData, width: width, height: height, groupNodeSize: groupNodeSize, baseFontSize: baseFontSize, linkLineType: (this.props.linkLineType || 'solid'), enableShadows: this.props.enableShadows, shadowColor: this.props.shadowColor, shadowBlur: this.props.shadowBlur, shadowOffsetX: this.props.shadowOffsetX, shadowOffsetY: this.props.shadowOffsetY, backgroundType: this.props.backgroundType, backgroundColor: this.props.backgroundColor, backgroundImageUrl: this.props.backgroundImageUrl, fontColor: this.props.fontColor, onFetchMembers: function (gid) { return _this.onFetchMembers(gid); }, onGetSiteUrl: function (gid) { return _this.onGetSiteUrl(gid); }, onNodeHover: function (n) { return n && _this.handleNodeHover(n); }, onNodeClick: function (n) { return n && _this.handleNodeClick(n); } })) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolarSystem_SolarLayout__WEBPACK_IMPORTED_MODULE_2__["default"], { data: graphData, width: width, height: height, groupNodeSize: groupNodeSize, baseFontSize: baseFontSize, animationMode: animationMode, animationSpeed: animationSpeed, centerNodeSize: centerNodeSize, showUserLabel: showUserLabel, linkLineType: this.props.linkLineType, enableShadows: this.props.enableShadows, shadowColor: this.props.shadowColor, shadowBlur: this.props.shadowBlur, shadowOffsetX: this.props.shadowOffsetX, shadowOffsetY: this.props.shadowOffsetY, backgroundType: this.props.backgroundType, backgroundColor: this.props.backgroundColor, backgroundImageUrl: this.props.backgroundImageUrl, fontColor: this.props.fontColor, onFetchMembers: function (gid) { return _this.onFetchMembers(gid); }, onGetSiteUrl: function (gid) { return _this.onGetSiteUrl(gid); }, onNodeHover: function (n) { return n && _this.handleNodeHover(n); }, onNodeClick: function (n) { return n && _this.handleNodeClick(n); } }))))));
     };
     return GroupsSolarSystem;
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component));
