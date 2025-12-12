@@ -9,3 +9,4 @@ sharepoint/solution/*.sppkg
 config/package-solution.json.backup
 .vscode/
 *.sppkg
+release/
