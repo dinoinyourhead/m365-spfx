@@ -34,6 +34,7 @@ export interface IMeshLayoutProps {
 }
 
 const MeshLayout: React.FC<IMeshLayoutProps> = (props) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const fgRef = React.useRef<any>(null);
 
     const [hoveredNode, setHoveredNode] = useState<IGroupNode | null>(null);
@@ -49,6 +50,7 @@ const MeshLayout: React.FC<IMeshLayoutProps> = (props) => {
             .map(n => ({ ...n, fx: undefined, fy: undefined })); // Ensure no fixed positions
 
         // 2. Generate Links (Ring Lattice / Small World)
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const links: any[] = [];
         const k = 2; // Connect to 2 nearest neighbors
 
@@ -95,6 +97,7 @@ const MeshLayout: React.FC<IMeshLayoutProps> = (props) => {
         }
     }, [processedData]);
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-function-return-type
     const customNodeCanvas = (node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
         renderCustomNode(node, ctx, globalScale, {
             centerNodeSize: 0,
@@ -111,6 +114,7 @@ const MeshLayout: React.FC<IMeshLayoutProps> = (props) => {
         });
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-function-return-type
     const customNodeHitArea = (node: any, color: string, ctx: CanvasRenderingContext2D) => {
         const currentZoom = fgRef.current ? fgRef.current.zoom() : 1;
         renderNodeHitArea(node, color, ctx, currentZoom, {
@@ -134,6 +138,7 @@ const MeshLayout: React.FC<IMeshLayoutProps> = (props) => {
         setMousePos({ x: event.clientX, y: event.clientY });
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleNodeHover = (node: any) => {
         setHoveredNode(node);
         props.onNodeHover(node as IGroupNode);

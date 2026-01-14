@@ -33,6 +33,7 @@ export class MockGraphService implements IGraphService {
         });
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     public getGroupMembers(groupId: string): Promise<any[]> {
         return Promise.resolve([
             { id: '1', displayName: 'Mock User 1' },
@@ -40,6 +41,7 @@ export class MockGraphService implements IGraphService {
         ]);
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     public getGroupOwners(groupId: string): Promise<any[]> {
         return Promise.resolve([
             { id: '3', displayName: 'Mock Owner' }

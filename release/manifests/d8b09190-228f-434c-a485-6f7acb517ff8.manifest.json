@@ -40,7 +40,7 @@
     "scriptResources": {
       "groups-solar-system-web-part": {
         "type": "path",
-        "path": "groups-solar-system-web-part.js"
+        "path": "groups-solar-system-web-part_d0e024b70cf30ee502fc.js"
       },
       "react": {
         "type": "component",
@@ -69,7 +69,7 @@
       },
       "GroupsSolarSystemWebPartStrings": {
         "type": "path",
-        "path": "GroupsSolarSystemWebPartStrings_en-us.js"
+        "path": "GroupsSolarSystemWebPartStrings_en-us_eb42a517954fea904e022e89eb9f35e4.js"
       }
     }
   }

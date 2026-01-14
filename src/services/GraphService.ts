@@ -24,8 +24,10 @@ export class GraphService implements IGraphService {
                     mailNickname: g.mailNickname
                 };
                 // Map extra properties if present (specifically meetingCycle)
-                if (extraProperties.length > 0 && g[extraProperties[0]]) {
-                    node.meetingCycle = g[extraProperties[0]];
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                if (extraProperties.length > 0 && (g as any)[extraProperties[0]]) {
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    node.meetingCycle = (g as any)[extraProperties[0]];
                 }
                 return node;
             });
@@ -51,8 +53,8 @@ export class GraphService implements IGraphService {
                     description: response.description,
                     mailNickname: response.mailNickname
                 };
-                if (extraProperties.length > 0 && response[extraProperties[0]]) {
-                    node.meetingCycle = response[extraProperties[0]];
+                if (extraProperties.length > 0 && (response as any)[extraProperties[0]]) {
+                    node.meetingCycle = (response as any)[extraProperties[0]];
                 }
                 groups.push(node);
             } catch (e) {
@@ -100,6 +102,7 @@ export class GraphService implements IGraphService {
                 .select('id,displayName')
                 .get();
 
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const members: IMember[] = membersResponse.value.map((m: any) => ({
                 id: m.id,
                 displayName: m.displayName
@@ -130,6 +133,7 @@ export class GraphService implements IGraphService {
                 .select('id,displayName')
                 .get();
 
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const owners: IMember[] = ownersResponse.value.map((m: any) => ({
                 id: m.id,
                 displayName: m.displayName
@@ -169,6 +173,7 @@ export class GraphService implements IGraphService {
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 const photoBlob = await client.api(`/groups/${group.id}/photo/$value`).responseType('blob' as any).get();
                 group.photoBlobUrl = URL.createObjectURL(photoBlob);
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
             } catch (e) {
                 // No photo or error, ignore
             }

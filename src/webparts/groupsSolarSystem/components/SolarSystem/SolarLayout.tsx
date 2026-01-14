@@ -38,6 +38,7 @@ export interface ISolarLayoutProps {
 }
 
 const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const fgRef = React.useRef<any>(null);
     const requestRef = React.useRef<number>();
     const isPausedRef = React.useRef<boolean>(false);
@@ -74,7 +75,9 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
         const maxRx = Math.max(minRx, absoluteMaxRx * 0.9);
         const maxRy = Math.max(minRy, absoluteMaxRy * 0.9);
 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const groupNodes = processedData.nodes.filter((n: any) => !n.isUser);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const userNode = processedData.nodes.filter((n: any) => n.isUser)[0];
 
         if (userNode) {
@@ -84,6 +87,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
 
         const nodeCount = groupNodes.length;
         if (nodeCount > 0) {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             groupNodes.forEach((node: any, i: number) => {
                 const t = nodeCount > 1 ? i / (nodeCount - 1) : 0.0;
                 if (typeof node.orbitAngle === 'undefined') {
@@ -162,6 +166,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
     }, [props.width, props.height]); // Re-run on resize
 
     // Shared Node Render Pass-through
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-function-return-type
     const customNodeCanvas = (node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
         renderCustomNode(node, ctx, globalScale, {
             centerNodeSize: props.centerNodeSize,
@@ -178,6 +183,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
         });
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-function-return-type
     const customNodeHitArea = (node: any, color: string, ctx: CanvasRenderingContext2D) => {
         const currentZoom = fgRef.current ? fgRef.current.zoom() : 1;
         renderNodeHitArea(node, color, ctx, currentZoom, {
@@ -201,6 +207,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
         setMousePos({ x: event.clientX, y: event.clientY });
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleNodeHover = (node: any) => {
         isPausedRef.current = !!node;
         setHoveredNode(node);
@@ -272,7 +279,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
                     // Interaction
                     enableZoomInteraction={false}
                     enablePanInteraction={false}
-                    // @ts-ignore
+                    // @ts-expect-error d3AlphaTarget property exists on the force graph instance
                     d3AlphaTarget={0.1} // Manual Mode Needs Target
                     onEngineStop={() => {
                         if (fgRef.current) fgRef.current.d3ReheatSimulation();

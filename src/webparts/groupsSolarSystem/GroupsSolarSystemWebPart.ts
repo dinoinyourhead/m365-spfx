@@ -76,6 +76,7 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
       : [];
 
     // Choose service instance
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const service: any = this._mockGraphService || this._graphService;
 
     const element: React.ReactElement<IGroupsSolarSystemProps> = React.createElement(
@@ -129,6 +130,7 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
     // PAGE 1: Configuration & Content
 
     // Group 1: Data Source
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const dataSourceFields: any[] = [
       PropertyPaneTextField('description', {
         label: strings.DescriptionFieldLabel
@@ -160,6 +162,7 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
     }
 
     // Group 2: Layout & Display
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const layoutDisplayFields: any[] = [
       PropertyPaneChoiceGroup('layoutMode', {
         label: 'Layout Mode',
@@ -171,6 +174,7 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
     ];
 
     // Only show animation settings for Solar mode
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const groupMetadataFields: any[] = [
       PropertyPaneToggle('showMeetingCycle', {
         label: 'Show Meeting Cycle (Tooltip)'
@@ -245,6 +249,7 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
     // PAGE 2: Visual Customization
 
     // Group 3: Center Node (Solar mode specific)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const centerNodeFields: any[] = [
       PropertyPaneToggle('useCustomCenter', {
         label: 'Use Custom Center Node',
@@ -274,6 +279,7 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
     }
 
     // Group 4: Node Styling
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const nodeStylingFields: any[] = [
       PropertyPaneSlider('groupNodeSize', {
         label: 'Group Node Size',
@@ -300,6 +306,7 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
     ];
 
     // Group 5: Link Styling
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const linkStylingFields: any[] = [
       PropertyPaneChoiceGroup('linkLineType', {
         label: 'Link Line Type',
@@ -312,6 +319,7 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
     ];
 
     // Group 6: Shadow Effects
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const shadowFields: any[] = [
       PropertyPaneToggle('enableShadows', {
         label: 'Enable Shadows'
@@ -347,6 +355,7 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
     ];
 
     // Build pages array
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const pages: any[] = [
       {
         header: {
