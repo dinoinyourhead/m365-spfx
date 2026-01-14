@@ -27,4 +27,5 @@ export interface IGroupsSolarSystemProps {
   backgroundColor: string;
   backgroundImageUrl: string;
   fontColor: string;
+  isNodeClickable?: boolean;
 }

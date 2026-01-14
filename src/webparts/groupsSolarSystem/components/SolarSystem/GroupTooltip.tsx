@@ -29,6 +29,28 @@ export const GroupTooltip: React.FC<IGroupTooltipProps> = ({ node, x, y }) => {
                 <p className={styles.description}>{node.description}</p>
             )}
 
+            {node.owners && node.owners.length > 0 && (
+                <div className={styles.section}>
+                    <h4 className={styles.sectionTitle}>Kümmerer</h4>
+                    <div className={styles.avatars}>
+                        {node.owners.map((owner) => (
+                            <div key={owner.id} className={styles.ownerRow} style={{ display: 'flex', alignItems: 'center', marginBottom: '4px' }}>
+                                <div className={styles.avatar} title={owner.displayName} style={{ marginRight: '8px' }}>
+                                    {owner.photoBlobUrl ? (
+                                        <img src={owner.photoBlobUrl} alt={owner.displayName} />
+                                    ) : (
+                                        <div className={styles.avatarInitials}>
+                                            {owner.displayName.charAt(0).toUpperCase()}
+                                        </div>
+                                    )}
+                                </div>
+                                <span className={styles.ownerName}>{owner.displayName}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+
             {node.members && node.members.length > 0 && (
                 <div className={styles.members}>
                     <div className={styles.avatars}>

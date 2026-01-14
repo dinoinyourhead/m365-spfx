@@ -21,6 +21,17 @@ Short summary on functionality and used technologies.
 
 > Any special pre-requisites?
 
+## Troubleshooting
+
+### Node Version Compatibility
+This project uses SPFx 1.21.1 which officially supports Node.js v22. If you are running a newer version of Node.js (e.g., v24), you may encounter an error starting the dev server.
+A workaround is applied in `gulpfile.js` to bypass the version check:
+```javascript
+// Hack to bypass SPFx Node version check
+Object.defineProperty(process, 'version', { writable: true, value: 'v22.14.0' });
+```
+This forces the build rig to believe it is running on a supported version.
+
 ## Solution
 
 | Solution    | Author(s)                                               |

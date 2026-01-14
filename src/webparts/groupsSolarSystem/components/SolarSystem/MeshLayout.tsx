@@ -23,6 +23,7 @@ export interface IMeshLayoutProps {
     backgroundColor: string;
     backgroundImageUrl: string;
     fontColor: string;
+    isNodeClickable: boolean;
 
     onFetchMembers: (groupId: string) => Promise<IMember[]>;
     onGetSiteUrl: (groupId: string) => Promise<string>;
@@ -181,6 +182,7 @@ const MeshLayout: React.FC<IMeshLayoutProps> = (props) => {
                     width: '100%',
                     height: '100%',
                     position: 'relative',
+                    cursor: (hoveredNode && !hoveredNode.isUser && props.isNodeClickable) ? 'pointer' : 'default',
                     ...getBackgroundStyle()
                 }}
             >
@@ -204,7 +206,7 @@ const MeshLayout: React.FC<IMeshLayoutProps> = (props) => {
                     enableZoomInteraction={false}
                     enablePanInteraction={false}
                     onNodeHover={handleNodeHover}
-                    onNodeClick={(node) => props.onNodeClick(node as IGroupNode)}
+                    onNodeClick={props.isNodeClickable ? (node) => props.onNodeClick(node as IGroupNode) : undefined}
                 />
             </div>
             {hoveredNode && (

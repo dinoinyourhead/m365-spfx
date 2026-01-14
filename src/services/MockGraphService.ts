@@ -34,7 +34,16 @@ export class MockGraphService implements IGraphService {
     }
 
     public getGroupMembers(groupId: string): Promise<any[]> {
-        return Promise.resolve([]);
+        return Promise.resolve([
+            { id: '1', displayName: 'Mock User 1' },
+            { id: '2', displayName: 'Mock User 2' }
+        ]);
+    }
+
+    public getGroupOwners(groupId: string): Promise<any[]> {
+        return Promise.resolve([
+            { id: '3', displayName: 'Mock Owner' }
+        ]);
     }
 
     public getGroupSiteUrl(groupId: string): Promise<string> {

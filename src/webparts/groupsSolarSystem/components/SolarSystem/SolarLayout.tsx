@@ -27,6 +27,7 @@ export interface ISolarLayoutProps {
     backgroundColor: string;
     backgroundImageUrl: string;
     fontColor: string;
+    isNodeClickable: boolean;
 
     onFetchMembers: (groupId: string) => Promise<IMember[]>;
     onGetSiteUrl: (groupId: string) => Promise<string>;
@@ -249,6 +250,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
                     width: '100%',
                     height: '100%',
                     position: 'relative',
+                    cursor: (hoveredNode && !hoveredNode.isUser && props.isNodeClickable) ? 'pointer' : 'default',
                     ...getBackgroundStyle()
                 }}
             >
@@ -276,7 +278,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
                         if (fgRef.current) fgRef.current.d3ReheatSimulation();
                     }}
                     onNodeHover={handleNodeHover}
-                    onNodeClick={(node) => props.onNodeClick(node as IGroupNode)}
+                    onNodeClick={props.isNodeClickable ? (node) => props.onNodeClick(node as IGroupNode) : undefined}
                 />
             </div>
             {hoveredNode && !hoveredNode.isUser && (

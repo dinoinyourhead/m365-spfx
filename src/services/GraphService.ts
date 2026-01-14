@@ -101,6 +101,36 @@ export class GraphService implements IGraphService {
         }
     }
 
+    public async getGroupOwners(groupId: string): Promise<IMember[]> {
+        const client = await this.getClient();
+        try {
+            const ownersResponse = await client.api(`/groups/${groupId}/owners`)
+                .top(5)
+                .select('id,displayName')
+                .get();
+
+            const owners: IMember[] = ownersResponse.value.map((m: any) => ({
+                id: m.id,
+                displayName: m.displayName
+            }));
+
+            await Promise.all(owners.map(async (owner) => {
+                try {
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    const photoBlob = await client.api(`/users/${owner.id}/photo/$value`).responseType('blob' as any).get();
+                    owner.photoBlobUrl = URL.createObjectURL(photoBlob);
+                } catch (e) {
+                    // No photo
+                }
+            }));
+
+            return owners;
+        } catch (error) {
+            console.error(`Error fetching owners for group ${groupId}`, error);
+            return [];
+        }
+    }
+
     public async getGroupSiteUrl(groupId: string): Promise<string> {
         const client = await this.getClient();
         try {

@@ -49,6 +49,7 @@ export interface IGroupsSolarSystemWebPartProps {
   backgroundColor: string;
   backgroundImageUrl: string;
   fontColor: string;
+  isNodeClickable: boolean;
 }
 
 export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGroupsSolarSystemWebPartProps> {
@@ -104,7 +105,8 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
         backgroundType: this.properties.backgroundType || 'color',
         backgroundColor: this.properties.backgroundColor || '#ffffff',
         backgroundImageUrl: this.properties.backgroundImageUrl || '',
-        fontColor: this.properties.fontColor || '#000000'
+        fontColor: this.properties.fontColor || '#000000',
+        isNodeClickable: this.properties.isNodeClickable !== false // Default true if undefined
       }
     );
 
@@ -261,6 +263,10 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
         max: 30,
         step: 1,
         value: 6
+      }),
+      PropertyPaneToggle('isNodeClickable', {
+        label: 'Enable Node Click',
+        checked: true
       }),
       PropertyPaneSlider('baseFontSize', {
         label: 'Base Font Size',

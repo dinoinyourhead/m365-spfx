@@ -12,6 +12,7 @@ export interface IGroupNode {
     isUser?: boolean; // True if this node is the central user (Sun)
     photoBlobUrl?: string;
     members?: IMember[];
+    owners?: IMember[];
     fx?: number;
     fy?: number;
 }
@@ -32,5 +33,6 @@ export interface IGraphService {
     getGroupsByIds(ids: string[]): Promise<IGroupNode[]>;
     getGroupsBySiteUrlPrefix(prefix: string): Promise<IGroupNode[]>;
     getGroupMembers(groupId: string): Promise<IMember[]>;
+    getGroupOwners(groupId: string): Promise<IMember[]>;
     getGroupSiteUrl(groupId: string): Promise<string>;
 }

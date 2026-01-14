@@ -82,15 +82,18 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
         groups = await this.props.graphService.getMyGroups();
       }
 
-      // Fetch members for each group to populate tooltips
+      // Fetch members and owners for each group to populate tooltips
       const groupsWithMembers = await Promise.all(
         groups.map(async (group) => {
           try {
-            const members = await this.props.graphService.getGroupMembers(group.id);
-            return { ...group, members };
+            const [members, owners] = await Promise.all([
+              this.props.graphService.getGroupMembers(group.id),
+              this.props.graphService.getGroupOwners(group.id)
+            ]);
+            return { ...group, members, owners };
           } catch (error) {
-            console.error(`Failed to fetch members for group ${group.id}:`, error);
-            return group; // Return group without members if fetch fails
+            console.error(`Failed to fetch details for group ${group.id}:`, error);
+            return group; // Return group without extra details if fetch fails
           }
         })
       );
@@ -145,6 +148,7 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private handleNodeClick = async (node: any): Promise<void> => {
     if (node.isUser) return;
+    if (this.props.isNodeClickable === false) return;
     try {
       const url = await this.props.graphService.getGroupSiteUrl(node.id);
       if (url) window.open(url, '_blank');
@@ -169,7 +173,7 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
     } = this.props;
 
     return (
-      <section className={styles.groupsSolarSystem}>
+      <section className={`${styles.groupsSolarSystem} ${!this.props.isNodeClickable ? styles.forceDefaultCursor : ''}`}>
         <div ref={this._containerRef} style={{ width: '100%', height: `${height}px`, position: 'relative' }}>
           {loading && <div>Loading your solar system...</div>}
           {error && <div style={{ color: 'red' }}>{error}</div>}
@@ -191,6 +195,7 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
                 backgroundColor={this.props.backgroundColor}
                 backgroundImageUrl={this.props.backgroundImageUrl}
                 fontColor={this.props.fontColor}
+                isNodeClickable={this.props.isNodeClickable !== false}
                 onFetchMembers={(gid) => this.onFetchMembers(gid)}
                 onGetSiteUrl={(gid) => this.onGetSiteUrl(gid)}
                 onNodeHover={(n) => this.handleNodeHover(n)}
@@ -217,6 +222,7 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
                 backgroundColor={this.props.backgroundColor}
                 backgroundImageUrl={this.props.backgroundImageUrl}
                 fontColor={this.props.fontColor}
+                isNodeClickable={this.props.isNodeClickable !== false}
                 onFetchMembers={(gid) => this.onFetchMembers(gid)}
                 onGetSiteUrl={(gid) => this.onGetSiteUrl(gid)}
                 onNodeHover={(n) => this.handleNodeHover(n)}
