@@ -13,6 +13,7 @@ export interface IGroupNode {
     photoBlobUrl?: string;
     members?: IMember[];
     owners?: IMember[];
+    meetingCycle?: string;
     fx?: number;
     fy?: number;
 }
@@ -29,9 +30,9 @@ export interface IGraphData {
 }
 
 export interface IGraphService {
-    getMyGroups(): Promise<IGroupNode[]>;
-    getGroupsByIds(ids: string[]): Promise<IGroupNode[]>;
-    getGroupsBySiteUrlPrefix(prefix: string): Promise<IGroupNode[]>;
+    getMyGroups(extraProperties?: string[]): Promise<IGroupNode[]>;
+    getGroupsByIds(ids: string[], extraProperties?: string[]): Promise<IGroupNode[]>;
+    getGroupsBySiteUrlPrefix(prefix: string, extraProperties?: string[]): Promise<IGroupNode[]>;
     getGroupMembers(groupId: string): Promise<IMember[]>;
     getGroupOwners(groupId: string): Promise<IMember[]>;
     getGroupSiteUrl(groupId: string): Promise<string>;

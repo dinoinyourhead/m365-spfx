@@ -72,14 +72,19 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
     try {
       let groups: IGroupNode[];
 
+      const extraProperties: string[] = [];
+      if (this.props.showMeetingCycle && this.props.meetingCyclePropertyName) {
+        extraProperties.push(this.props.meetingCyclePropertyName);
+      }
+
       // Check filter mode
       if (this.props.filterMode === 'SpecificIds') {
-        groups = await this.props.graphService.getGroupsByIds(this.props.groupIds);
+        groups = await this.props.graphService.getGroupsByIds(this.props.groupIds, extraProperties);
       } else if (this.props.filterMode === 'UrlPrefix' && this.props.urlPrefix) {
-        groups = await this.props.graphService.getGroupsBySiteUrlPrefix(this.props.urlPrefix);
+        groups = await this.props.graphService.getGroupsBySiteUrlPrefix(this.props.urlPrefix, extraProperties);
       } else {
         // Default to All / My Groups
-        groups = await this.props.graphService.getMyGroups();
+        groups = await this.props.graphService.getMyGroups(extraProperties);
       }
 
       // Fetch members and owners for each group to populate tooltips

@@ -8,19 +8,27 @@ export class GraphService implements IGraphService {
         return await this._msGraphClientFactory.getClient('3');
     }
 
-    public async getMyGroups(): Promise<IGroupNode[]> {
+    public async getMyGroups(extraProperties: string[] = []): Promise<IGroupNode[]> {
         const client = await this.getClient();
         try {
+            const selectProps = ['id', 'displayName', 'mailNickname', 'description', ...extraProperties];
             const response = await client.api('/me/transitiveMemberOf/microsoft.graph.group')
-                .select('id,displayName,mailNickname,description')
+                .select(selectProps.join(','))
                 .top(999)
                 .get();
-            const groups: IGroupNode[] = response.value.map((g: any) => ({
-                id: g.id,
-                displayName: g.displayName,
-                description: g.description,
-                mailNickname: g.mailNickname
-            }));
+            const groups: IGroupNode[] = response.value.map((g: any) => {
+                const node: IGroupNode = {
+                    id: g.id,
+                    displayName: g.displayName,
+                    description: g.description,
+                    mailNickname: g.mailNickname
+                };
+                // Map extra properties if present (specifically meetingCycle)
+                if (extraProperties.length > 0 && g[extraProperties[0]]) {
+                    node.meetingCycle = g[extraProperties[0]];
+                }
+                return node;
+            });
             await this.enrichGroupsWithPhotos(groups, client);
             return groups;
         } catch (error) {
@@ -29,18 +37,24 @@ export class GraphService implements IGraphService {
         }
     }
 
-    public async getGroupsByIds(ids: string[]): Promise<IGroupNode[]> {
+    public async getGroupsByIds(ids: string[], extraProperties: string[] = []): Promise<IGroupNode[]> {
         const client = await this.getClient();
         const groups: IGroupNode[] = [];
+        const selectProps = ['id', 'displayName', 'mailNickname', 'description', ...extraProperties];
+
         await Promise.all(ids.map(async (id) => {
             try {
-                const response = await client.api(`/groups/${id}`).select('id,displayName,mailNickname,description').get();
-                groups.push({
+                const response = await client.api(`/groups/${id}`).select(selectProps.join(',')).get();
+                const node: IGroupNode = {
                     id: response.id,
                     displayName: response.displayName,
                     description: response.description,
                     mailNickname: response.mailNickname
-                });
+                };
+                if (extraProperties.length > 0 && response[extraProperties[0]]) {
+                    node.meetingCycle = response[extraProperties[0]];
+                }
+                groups.push(node);
             } catch (e) {
                 console.warn(`Group ${id} not found`);
             }
@@ -49,20 +63,27 @@ export class GraphService implements IGraphService {
         return groups;
     }
 
-    public async getGroupsBySiteUrlPrefix(prefix: string): Promise<IGroupNode[]> {
+    public async getGroupsBySiteUrlPrefix(prefix: string, extraProperties: string[] = []): Promise<IGroupNode[]> {
         const client = await this.getClient();
         try {
+            const selectProps = ['id', 'displayName', 'mailNickname', 'description', ...extraProperties];
             const response = await client.api('/groups')
                 .filter(`startsWith(mailNickname, '${prefix}')`)
-                .select('id,displayName,mailNickname,description')
+                .select(selectProps.join(','))
                 .top(999)
                 .get();
-            const groups: IGroupNode[] = response.value.map((g: any) => ({
-                id: g.id,
-                displayName: g.displayName,
-                description: g.description,
-                mailNickname: g.mailNickname
-            }));
+            const groups: IGroupNode[] = response.value.map((g: any) => {
+                const node: IGroupNode = {
+                    id: g.id,
+                    displayName: g.displayName,
+                    description: g.description,
+                    mailNickname: g.mailNickname
+                };
+                if (extraProperties.length > 0 && g[extraProperties[0]]) {
+                    node.meetingCycle = g[extraProperties[0]];
+                }
+                return node;
+            });
             await this.enrichGroupsWithPhotos(groups, client);
             return groups;
         } catch (e) {

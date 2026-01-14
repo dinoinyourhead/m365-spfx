@@ -29,6 +29,13 @@ export const GroupTooltip: React.FC<IGroupTooltipProps> = ({ node, x, y }) => {
                 <p className={styles.description}>{node.description}</p>
             )}
 
+            {node.meetingCycle && (
+                <div className={styles.section} style={{ marginBottom: '12px' }}>
+                    <h4 className={styles.sectionTitle}>Regeltermin</h4>
+                    <span className={styles.description}>{node.meetingCycle}</span>
+                </div>
+            )}
+
             {node.owners && node.owners.length > 0 && (
                 <div className={styles.section}>
                     <h4 className={styles.sectionTitle}>Kümmerer</h4>

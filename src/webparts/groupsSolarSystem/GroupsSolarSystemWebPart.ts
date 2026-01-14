@@ -50,6 +50,8 @@ export interface IGroupsSolarSystemWebPartProps {
   backgroundImageUrl: string;
   fontColor: string;
   isNodeClickable: boolean;
+  showMeetingCycle: boolean;
+  meetingCyclePropertyName: string;
 }
 
 export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGroupsSolarSystemWebPartProps> {
@@ -106,7 +108,9 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
         backgroundColor: this.properties.backgroundColor || '#ffffff',
         backgroundImageUrl: this.properties.backgroundImageUrl || '',
         fontColor: this.properties.fontColor || '#000000',
-        isNodeClickable: this.properties.isNodeClickable !== false // Default true if undefined
+        isNodeClickable: this.properties.isNodeClickable !== false, // Default true if undefined
+        showMeetingCycle: this.properties.showMeetingCycle,
+        meetingCyclePropertyName: this.properties.meetingCyclePropertyName
       }
     );
 
@@ -167,6 +171,20 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
     ];
 
     // Only show animation settings for Solar mode
+    const groupMetadataFields: any[] = [
+      PropertyPaneToggle('showMeetingCycle', {
+        label: 'Show Meeting Cycle (Tooltip)'
+      })
+    ];
+    if (this.properties.showMeetingCycle) {
+      groupMetadataFields.push(
+        PropertyPaneTextField('meetingCyclePropertyName', {
+          label: 'Extension Property Name',
+          description: 'e.g. extension_appId_MeetingCycle'
+        })
+      );
+    }
+
     if (this.properties.layoutMode === 'Solar') {
       layoutDisplayFields.push(
         PropertyPaneChoiceGroup('animationMode', {
@@ -338,6 +356,10 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
           {
             groupName: 'Data Source',
             groupFields: dataSourceFields
+          },
+          {
+            groupName: 'Group Metadata',
+            groupFields: groupMetadataFields
           },
           {
             groupName: 'Layout & Display',

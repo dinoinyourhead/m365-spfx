@@ -28,4 +28,6 @@ export interface IGroupsSolarSystemProps {
   backgroundImageUrl: string;
   fontColor: string;
   isNodeClickable?: boolean;
+  showMeetingCycle?: boolean;
+  meetingCyclePropertyName?: string;
 }

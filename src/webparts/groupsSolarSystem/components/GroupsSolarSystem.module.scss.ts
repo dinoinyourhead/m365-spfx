@@ -1,11 +1,12 @@
 
 require("./GroupsSolarSystem.module.css");
 const styles = {
-  groupsSolarSystem: 'groupsSolarSystem_ebcf2827',
-  teams: 'teams_ebcf2827',
-  welcome: 'welcome_ebcf2827',
-  welcomeImage: 'welcomeImage_ebcf2827',
-  links: 'links_ebcf2827'
+  groupsSolarSystem: 'groupsSolarSystem_d829f377',
+  teams: 'teams_d829f377',
+  welcome: 'welcome_d829f377',
+  welcomeImage: 'welcomeImage_d829f377',
+  links: 'links_d829f377',
+  forceDefaultCursor: 'forceDefaultCursor_d829f377'
 };
 
 export default styles;
