@@ -29,6 +29,7 @@ export interface IMeshLayoutProps {
     onGetSiteUrl: (groupId: string) => Promise<string>;
 
     // Callbacks
+    // eslint-disable-next-line @rushstack/no-new-null
     onNodeHover: (node: IGroupNode | null) => void;
     onNodeClick: (node: IGroupNode) => void;
 }
@@ -37,6 +38,7 @@ const MeshLayout: React.FC<IMeshLayoutProps> = (props) => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const fgRef = React.useRef<any>(null);
 
+    // eslint-disable-next-line @rushstack/no-new-null
     const [hoveredNode, setHoveredNode] = useState<IGroupNode | null>(null);
     const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
 
@@ -134,12 +136,12 @@ const MeshLayout: React.FC<IMeshLayoutProps> = (props) => {
         }
     };
 
-    const handleMouseMove = (event: React.MouseEvent) => {
+    const handleMouseMove = (event: React.MouseEvent): void => {
         setMousePos({ x: event.clientX, y: event.clientY });
     };
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const handleNodeHover = (node: any) => {
+    const handleNodeHover = (node: any): void => {
         setHoveredNode(node);
         props.onNodeHover(node as IGroupNode);
     };

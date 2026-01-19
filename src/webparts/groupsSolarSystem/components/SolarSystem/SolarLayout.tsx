@@ -33,6 +33,7 @@ export interface ISolarLayoutProps {
     onGetSiteUrl: (groupId: string) => Promise<string>;
 
     // Callbacks
+    // eslint-disable-next-line @rushstack/no-new-null
     onNodeHover: (node: IGroupNode | null) => void;
     onNodeClick: (node: IGroupNode) => void;
 }
@@ -43,6 +44,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
     const requestRef = React.useRef<number>();
     const isPausedRef = React.useRef<boolean>(false);
 
+    // eslint-disable-next-line @rushstack/no-new-null
     const [hoveredNode, setHoveredNode] = useState<IGroupNode | null>(null);
     const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
     const frameRef = React.useRef<number>(0);
@@ -112,7 +114,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
             });
         }
 
-        const animate = () => {
+        const animate = (): void => {
             if (props.animationMode === 'Static') {
                 if (requestRef.current) cancelAnimationFrame(requestRef.current);
                 return;
@@ -121,6 +123,7 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
                 frameRef.current++;
                 const speedMultiplier = 1 + (props.animationSpeed || 0) / 100;
 
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 groupNodes.forEach((node: any, i: number) => {
                     if (props.animationMode === 'Orbit') {
                         node.orbitAngle += node.orbitSpeed * speedMultiplier;
@@ -203,12 +206,12 @@ const SolarLayout: React.FC<ISolarLayoutProps> = (props) => {
         }
     };
 
-    const handleMouseMove = (event: React.MouseEvent) => {
+    const handleMouseMove = (event: React.MouseEvent): void => {
         setMousePos({ x: event.clientX, y: event.clientY });
     };
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const handleNodeHover = (node: any) => {
+    const handleNodeHover = (node: any): void => {
         isPausedRef.current = !!node;
         setHoveredNode(node);
         props.onNodeHover(node as IGroupNode);

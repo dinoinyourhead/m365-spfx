@@ -16,6 +16,7 @@ export class GraphService implements IGraphService {
                 .select(selectProps.join(','))
                 .top(999)
                 .get();
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const groups: IGroupNode[] = response.value.map((g: any) => {
                 const node: IGroupNode = {
                     id: g.id,
@@ -53,10 +54,13 @@ export class GraphService implements IGraphService {
                     description: response.description,
                     mailNickname: response.mailNickname
                 };
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 if (extraProperties.length > 0 && (response as any)[extraProperties[0]]) {
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     node.meetingCycle = (response as any)[extraProperties[0]];
                 }
                 groups.push(node);
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
             } catch (e) {
                 console.warn(`Group ${id} not found`);
             }
@@ -74,6 +78,7 @@ export class GraphService implements IGraphService {
                 .select(selectProps.join(','))
                 .top(999)
                 .get();
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const groups: IGroupNode[] = response.value.map((g: any) => {
                 const node: IGroupNode = {
                     id: g.id,
@@ -112,7 +117,9 @@ export class GraphService implements IGraphService {
                 try {
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     const photoBlob = await client.api(`/users/${member.id}/photo/$value`).responseType('blob' as any).get();
+                    // eslint-disable-next-line require-atomic-updates
                     member.photoBlobUrl = URL.createObjectURL(photoBlob);
+                    // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 } catch (e) {
                     // No photo
                 }
@@ -143,7 +150,9 @@ export class GraphService implements IGraphService {
                 try {
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     const photoBlob = await client.api(`/users/${owner.id}/photo/$value`).responseType('blob' as any).get();
+                    // eslint-disable-next-line require-atomic-updates
                     owner.photoBlobUrl = URL.createObjectURL(photoBlob);
+                    // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 } catch (e) {
                     // No photo
                 }
@@ -172,6 +181,7 @@ export class GraphService implements IGraphService {
             try {
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 const photoBlob = await client.api(`/groups/${group.id}/photo/$value`).responseType('blob' as any).get();
+                // eslint-disable-next-line require-atomic-updates
                 group.photoBlobUrl = URL.createObjectURL(photoBlob);
                 // eslint-disable-next-line @typescript-eslint/no-unused-vars
             } catch (e) {

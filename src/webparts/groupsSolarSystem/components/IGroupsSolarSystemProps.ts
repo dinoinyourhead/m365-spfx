@@ -1,6 +1,7 @@
 export interface IGroupsSolarSystemProps {
   description: string;
   userDisplayName: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   graphService: any; // Using any to accept both Mock and Real service
   filterMode: 'All' | 'SpecificIds' | 'UrlPrefix';
   groupIds: string[];

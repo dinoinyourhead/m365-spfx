@@ -136,6 +136,7 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private onFetchMembers = (groupId: string): Promise<any[]> => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return this.props.graphService.getGroupMembers(groupId);

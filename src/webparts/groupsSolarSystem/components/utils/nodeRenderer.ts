@@ -68,7 +68,8 @@ export const renderCustomNode = (node: any, ctx: CanvasRenderingContext2D, globa
         ctx.shadowOffsetY = 0;
 
         ctx.clip();
-        try { ctx.drawImage(node.img, node.x - size, node.y - size, size * 2, size * 2); } catch (e) { }
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        try { ctx.drawImage(node.img, node.x - size, node.y - size, size * 2, size * 2); } catch (e) { /* ignore */ }
     } else {
         ctx.fillStyle = node.isUser ? 'orange' : '#0078d4';
         ctx.fill();
