@@ -175,67 +175,84 @@ export default class GroupsSolarSystem extends React.Component<IGroupsSolarSyste
       layoutMode,
       baseFontSize,
       animationSpeed,
-      centerNodeSize
+      centerNodeSize,
+      displayAsTile,
+      tileBackgroundImageUrl
     } = this.props;
 
+    // Determine wrapper class based on tile mode
+    const wrapperClass = displayAsTile
+      ? `${styles.groupsSolarSystem} ${styles.tile} ${!this.props.isNodeClickable ? styles.forceDefaultCursor : ''}`
+      : `${styles.groupsSolarSystem} ${!this.props.isNodeClickable ? styles.forceDefaultCursor : ''}`;
+
+    const layoutContent = layoutMode === 'Mesh' ? (
+      <MeshLayout
+        data={graphData}
+        width={width}
+        height={height}
+        groupNodeSize={groupNodeSize}
+        baseFontSize={baseFontSize}
+        linkLineType={(this.props.linkLineType || 'solid') as 'solid' | 'dashed' | 'dotted'}
+        enableShadows={this.props.enableShadows}
+        shadowColor={this.props.shadowColor}
+        shadowBlur={this.props.shadowBlur}
+        shadowOffsetX={this.props.shadowOffsetX}
+        shadowOffsetY={this.props.shadowOffsetY}
+        backgroundType={this.props.backgroundType}
+        backgroundColor={this.props.backgroundColor}
+        backgroundImageUrl={this.props.backgroundImageUrl}
+        fontColor={this.props.fontColor}
+        isNodeClickable={this.props.isNodeClickable !== false}
+        onFetchMembers={(gid) => this.onFetchMembers(gid)}
+        onGetSiteUrl={(gid) => this.onGetSiteUrl(gid)}
+        onNodeHover={(n) => this.handleNodeHover(n)}
+        onNodeClick={(n) => this.handleNodeClick(n)}
+      />
+    ) : (
+      <SolarLayout
+        data={graphData}
+        width={width}
+        height={height}
+        groupNodeSize={groupNodeSize}
+        baseFontSize={baseFontSize}
+        animationMode={animationMode}
+        animationSpeed={animationSpeed}
+        centerNodeSize={centerNodeSize}
+        showUserLabel={showUserLabel}
+        linkLineType={this.props.linkLineType}
+        enableShadows={this.props.enableShadows}
+        shadowColor={this.props.shadowColor}
+        shadowBlur={this.props.shadowBlur}
+        shadowOffsetX={this.props.shadowOffsetX}
+        shadowOffsetY={this.props.shadowOffsetY}
+        backgroundType={this.props.backgroundType}
+        backgroundColor={this.props.backgroundColor}
+        backgroundImageUrl={this.props.backgroundImageUrl}
+        fontColor={this.props.fontColor}
+        isNodeClickable={this.props.isNodeClickable !== false}
+        onFetchMembers={(gid) => this.onFetchMembers(gid)}
+        onGetSiteUrl={(gid) => this.onGetSiteUrl(gid)}
+        onNodeHover={(n) => this.handleNodeHover(n)}
+        onNodeClick={(n) => this.handleNodeClick(n)}
+      />
+    );
+
     return (
-      <section className={`${styles.groupsSolarSystem} ${!this.props.isNodeClickable ? styles.forceDefaultCursor : ''}`}>
-        <div ref={this._containerRef} style={{ width: '100%', height: `${height}px`, position: 'relative' }}>
+      <section className={wrapperClass}>
+        {displayAsTile && tileBackgroundImageUrl && (
+          <div
+            className={styles.tileBackground}
+            style={{ backgroundImage: `url(${tileBackgroundImageUrl})` }}
+          />
+        )}
+        <div
+          ref={this._containerRef}
+          className={displayAsTile ? styles.tileContent : undefined}
+          style={{ width: '100%', height: `${height}px`, position: 'relative' }}
+        >
           {loading && <div>Loading your solar system...</div>}
           {error && <div style={{ color: 'red' }}>{error}</div>}
-          {!loading && !error && (
-            layoutMode === 'Mesh' ? (
-              <MeshLayout
-                data={graphData}
-                width={width}
-                height={height}
-                groupNodeSize={groupNodeSize}
-                baseFontSize={baseFontSize}
-                linkLineType={(this.props.linkLineType || 'solid') as 'solid' | 'dashed' | 'dotted'}
-                enableShadows={this.props.enableShadows}
-                shadowColor={this.props.shadowColor}
-                shadowBlur={this.props.shadowBlur}
-                shadowOffsetX={this.props.shadowOffsetX}
-                shadowOffsetY={this.props.shadowOffsetY}
-                backgroundType={this.props.backgroundType}
-                backgroundColor={this.props.backgroundColor}
-                backgroundImageUrl={this.props.backgroundImageUrl}
-                fontColor={this.props.fontColor}
-                isNodeClickable={this.props.isNodeClickable !== false}
-                onFetchMembers={(gid) => this.onFetchMembers(gid)}
-                onGetSiteUrl={(gid) => this.onGetSiteUrl(gid)}
-                onNodeHover={(n) => this.handleNodeHover(n)}
-                onNodeClick={(n) => this.handleNodeClick(n)}
-              />
-            ) : (
-              <SolarLayout
-                data={graphData}
-                width={width}
-                height={height}
-                groupNodeSize={groupNodeSize}
-                baseFontSize={baseFontSize}
-                animationMode={animationMode}
-                animationSpeed={animationSpeed}
-                centerNodeSize={centerNodeSize}
-                showUserLabel={showUserLabel}
-                linkLineType={this.props.linkLineType}
-                enableShadows={this.props.enableShadows}
-                shadowColor={this.props.shadowColor}
-                shadowBlur={this.props.shadowBlur}
-                shadowOffsetX={this.props.shadowOffsetX}
-                shadowOffsetY={this.props.shadowOffsetY}
-                backgroundType={this.props.backgroundType}
-                backgroundColor={this.props.backgroundColor}
-                backgroundImageUrl={this.props.backgroundImageUrl}
-                fontColor={this.props.fontColor}
-                isNodeClickable={this.props.isNodeClickable !== false}
-                onFetchMembers={(gid) => this.onFetchMembers(gid)}
-                onGetSiteUrl={(gid) => this.onGetSiteUrl(gid)}
-                onNodeHover={(n) => this.handleNodeHover(n)}
-                onNodeClick={(n) => this.handleNodeClick(n)}
-              />
-            )
-          )}
+          {!loading && !error && layoutContent}
         </div>
       </section>
     );

@@ -16,16 +16,19 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 
-_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".groupsSolarSystem_d829f377{color:\"[theme:bodyText, default: #323130]\";color:var(--bodyText);overflow:hidden;padding:1em}.groupsSolarSystem_d829f377.teams_d829f377{font-family:Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif}.welcome_d829f377{text-align:center}.welcomeImage_d829f377{max-width:420px;width:100%}.links_d829f377 a{color:\"[theme:link, default:#03787c]\";color:var(--link);text-decoration:none}.links_d829f377 a:hover{color:\"[theme:linkHovered, default: #014446]\";color:var(--linkHovered);text-decoration:underline}.forceDefaultCursor_d829f377 canvas{cursor:default!important}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vVXNlcnMvZG9taW5pa25vbHRlLy5nZW1pbmkvYW50aWdyYXZpdHkvc2NyYXRjaC9tMzY1LWdyb3Vwcy1zb2xhci1zeXN0ZW0vbTM2NS1ncm91cHMtc29sYXItc3lzdGVtL3NyYy93ZWJwYXJ0cy9ncm91cHNTb2xhclN5c3RlbS9jb21wb25lbnRzL0dyb3Vwc1NvbGFyU3lzdGVtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLDRCQUdFLDBDQUFBLENBQ0EscUJBQUEsQ0FIQSxlQUFBLENBQ0EsV0FFQSxDQUVBLDJDQUNFLHNGQUFBLENBSUosa0JBQ0UsaUJBQUEsQ0FHRix1QkFFRSxlQUFBLENBREEsVUFDQSxDQUlBLGtCQUVFLHFDQUFBLENBQ0EsaUJBQUEsQ0FGQSxvQkFFQSxDQUVBLHdCQUVFLDZDQUFBLENBQ0Esd0JBQUEsQ0FGQSx5QkFFQSxDQU1KLG9DQUNFLHdCQUFBIiwiZmlsZSI6Ikdyb3Vwc1NvbGFyU3lzdGVtLm1vZHVsZS5jc3MifQ== */", true);
+_node_modules_microsoft_sp_css_loader_node_modules_microsoft_load_themed_styles_lib_es6_index_js__WEBPACK_IMPORTED_MODULE_0__.loadStyles(".groupsSolarSystem_a0468e83{color:\"[theme:bodyText, default: #323130]\";color:var(--bodyText);overflow:hidden;padding:1em}.groupsSolarSystem_a0468e83.teams_a0468e83{font-family:Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif}.welcome_a0468e83{text-align:center}.welcomeImage_a0468e83{max-width:420px;width:100%}.links_a0468e83 a{color:\"[theme:link, default:#03787c]\";color:var(--link);text-decoration:none}.links_a0468e83 a:hover{color:\"[theme:linkHovered, default: #014446]\";color:var(--linkHovered);text-decoration:underline}.forceDefaultCursor_a0468e83 canvas{cursor:default!important}.tile_a0468e83{border-radius:.75rem;box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);overflow:hidden;position:relative}.tileBackground_a0468e83{background-position:50%;background-size:cover;height:100%;left:0;position:absolute;top:0;width:100%;z-index:0}.tileContent_a0468e83{height:100%;position:relative;width:100%;z-index:1}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vVXNlcnMvZG9taW5pa25vbHRlLy5nZW1pbmkvYW50aWdyYXZpdHkvc2NyYXRjaC9tMzY1LWdyb3Vwcy1zb2xhci1zeXN0ZW0vbTM2NS1ncm91cHMtc29sYXItc3lzdGVtL3NyYy93ZWJwYXJ0cy9ncm91cHNTb2xhclN5c3RlbS9jb21wb25lbnRzL0dyb3Vwc1NvbGFyU3lzdGVtLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLDRCQUdFLDBDQUFBLENBQ0EscUJBQUEsQ0FIQSxlQUFBLENBQ0EsV0FFQSxDQUVBLDJDQUNFLHNGQUFBLENBSUosa0JBQ0UsaUJBQUEsQ0FHRix1QkFFRSxlQUFBLENBREEsVUFDQSxDQUlBLGtCQUVFLHFDQUFBLENBQ0EsaUJBQUEsQ0FGQSxvQkFFQSxDQUVBLHdCQUVFLDZDQUFBLENBQ0Esd0JBQUEsQ0FGQSx5QkFFQSxDQU1KLG9DQUNFLHdCQUFBLENBSUosZUFDRSxvQkFBQSxDQUNBLHNFQUFBLENBQ0EsZUFBQSxDQUNBLGlCQUFBLENBR0YseUJBT0UsdUJBQUEsQ0FEQSxxQkFBQSxDQURBLFdBQUEsQ0FGQSxNQUFBLENBRkEsaUJBQUEsQ0FDQSxLQUFBLENBRUEsVUFBQSxDQUlBLFNBQUEsQ0FHRixzQkFJRSxXQUFBLENBSEEsaUJBQUEsQ0FFQSxVQUFBLENBREEsU0FFQSIsImZpbGUiOiJHcm91cHNTb2xhclN5c3RlbS5tb2R1bGUuY3NzIn0= */", true);
 
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  groupsSolarSystem_d829f377: "groupsSolarSystem_d829f377",
-  teams_d829f377: "teams_d829f377",
-  welcome_d829f377: "welcome_d829f377",
-  welcomeImage_d829f377: "welcomeImage_d829f377",
-  links_d829f377: "links_d829f377",
-  forceDefaultCursor_d829f377: "forceDefaultCursor_d829f377"
+  groupsSolarSystem_a0468e83: "groupsSolarSystem_a0468e83",
+  teams_a0468e83: "teams_a0468e83",
+  welcome_a0468e83: "welcome_a0468e83",
+  welcomeImage_a0468e83: "welcomeImage_a0468e83",
+  links_a0468e83: "links_a0468e83",
+  forceDefaultCursor_a0468e83: "forceDefaultCursor_a0468e83",
+  tile_a0468e83: "tile_a0468e83",
+  tileBackground_a0468e83: "tileBackground_a0468e83",
+  tileContent_a0468e83: "tileContent_a0468e83"
 });
 
 
@@ -166,7 +169,9 @@ var GraphService = /** @class */ (function () {
                                 mailNickname: g.mailNickname
                             };
                             // Map extra properties if present (specifically meetingCycle)
+                            // eslint-disable-next-line @typescript-eslint/no-explicit-any
                             if (extraProperties.length > 0 && g[extraProperties[0]]) {
+                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                 node.meetingCycle = g[extraProperties[0]];
                             }
                             return node;
@@ -211,7 +216,9 @@ var GraphService = /** @class */ (function () {
                                                 description: response.description,
                                                 mailNickname: response.mailNickname
                                             };
+                                            // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                             if (extraProperties.length > 0 && response[extraProperties[0]]) {
+                                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                                 node.meetingCycle = response[extraProperties[0]];
                                             }
                                             groups.push(node);
@@ -310,6 +317,7 @@ var GraphService = /** @class */ (function () {
                                             return [4 /*yield*/, client.api("/users/".concat(member.id, "/photo/$value")).responseType('blob').get()];
                                         case 1:
                                             photoBlob = _a.sent();
+                                            // eslint-disable-next-line require-atomic-updates
                                             member.photoBlobUrl = URL.createObjectURL(photoBlob);
                                             return [3 /*break*/, 3];
                                         case 2:
@@ -362,6 +370,7 @@ var GraphService = /** @class */ (function () {
                                             return [4 /*yield*/, client.api("/users/".concat(owner.id, "/photo/$value")).responseType('blob').get()];
                                         case 1:
                                             photoBlob = _a.sent();
+                                            // eslint-disable-next-line require-atomic-updates
                                             owner.photoBlobUrl = URL.createObjectURL(photoBlob);
                                             return [3 /*break*/, 3];
                                         case 2:
@@ -421,6 +430,7 @@ var GraphService = /** @class */ (function () {
                                         return [4 /*yield*/, client.api("/groups/".concat(group.id, "/photo/$value")).responseType('blob').get()];
                                     case 1:
                                         photoBlob = _a.sent();
+                                        // eslint-disable-next-line require-atomic-updates
                                         group.photoBlobUrl = URL.createObjectURL(photoBlob);
                                         return [3 /*break*/, 3];
                                     case 2:
@@ -487,12 +497,14 @@ var MockGraphService = /** @class */ (function () {
             ]);
         });
     };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     MockGraphService.prototype.getGroupMembers = function (groupId) {
         return Promise.resolve([
             { id: '1', displayName: 'Mock User 1' },
             { id: '2', displayName: 'Mock User 2' }
         ]);
     };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     MockGraphService.prototype.getGroupOwners = function (groupId) {
         return Promise.resolve([
             { id: '3', displayName: 'Mock Owner' }
@@ -604,6 +616,7 @@ var GroupsSolarSystem = /** @class */ (function (_super) {
     function GroupsSolarSystem(props) {
         var _this = _super.call(this, props) || this;
         _this._containerRef = react__WEBPACK_IMPORTED_MODULE_0__.createRef();
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         _this.onFetchMembers = function (groupId) {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             return _this.props.graphService.getGroupMembers(groupId);
@@ -783,12 +796,18 @@ var GroupsSolarSystem = /** @class */ (function (_super) {
         var _a = this.state, loading = _a.loading, error = _a.error, graphData = _a.graphData, width = _a.width;
         var height = this.props.containerHeight || 600;
         // Props destructuring
-        var _b = this.props, groupNodeSize = _b.groupNodeSize, showUserLabel = _b.showUserLabel, animationMode = _b.animationMode, layoutMode = _b.layoutMode, baseFontSize = _b.baseFontSize, animationSpeed = _b.animationSpeed, centerNodeSize = _b.centerNodeSize;
-        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", { className: "".concat(_GroupsSolarSystem_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].groupsSolarSystem, " ").concat(!this.props.isNodeClickable ? _GroupsSolarSystem_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].forceDefaultCursor : '') },
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { ref: this._containerRef, style: { width: '100%', height: "".concat(height, "px"), position: 'relative' } },
+        var _b = this.props, groupNodeSize = _b.groupNodeSize, showUserLabel = _b.showUserLabel, animationMode = _b.animationMode, layoutMode = _b.layoutMode, baseFontSize = _b.baseFontSize, animationSpeed = _b.animationSpeed, centerNodeSize = _b.centerNodeSize, displayAsTile = _b.displayAsTile, tileBackgroundImageUrl = _b.tileBackgroundImageUrl;
+        // Determine wrapper class based on tile mode
+        var wrapperClass = displayAsTile
+            ? "".concat(_GroupsSolarSystem_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].groupsSolarSystem, " ").concat(_GroupsSolarSystem_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].tile, " ").concat(!this.props.isNodeClickable ? _GroupsSolarSystem_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].forceDefaultCursor : '')
+            : "".concat(_GroupsSolarSystem_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].groupsSolarSystem, " ").concat(!this.props.isNodeClickable ? _GroupsSolarSystem_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].forceDefaultCursor : '');
+        var layoutContent = layoutMode === 'Mesh' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolarSystem_MeshLayout__WEBPACK_IMPORTED_MODULE_3__["default"], { data: graphData, width: width, height: height, groupNodeSize: groupNodeSize, baseFontSize: baseFontSize, linkLineType: (this.props.linkLineType || 'solid'), enableShadows: this.props.enableShadows, shadowColor: this.props.shadowColor, shadowBlur: this.props.shadowBlur, shadowOffsetX: this.props.shadowOffsetX, shadowOffsetY: this.props.shadowOffsetY, backgroundType: this.props.backgroundType, backgroundColor: this.props.backgroundColor, backgroundImageUrl: this.props.backgroundImageUrl, fontColor: this.props.fontColor, isNodeClickable: this.props.isNodeClickable !== false, onFetchMembers: function (gid) { return _this.onFetchMembers(gid); }, onGetSiteUrl: function (gid) { return _this.onGetSiteUrl(gid); }, onNodeHover: function (n) { return _this.handleNodeHover(n); }, onNodeClick: function (n) { return _this.handleNodeClick(n); } })) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolarSystem_SolarLayout__WEBPACK_IMPORTED_MODULE_2__["default"], { data: graphData, width: width, height: height, groupNodeSize: groupNodeSize, baseFontSize: baseFontSize, animationMode: animationMode, animationSpeed: animationSpeed, centerNodeSize: centerNodeSize, showUserLabel: showUserLabel, linkLineType: this.props.linkLineType, enableShadows: this.props.enableShadows, shadowColor: this.props.shadowColor, shadowBlur: this.props.shadowBlur, shadowOffsetX: this.props.shadowOffsetX, shadowOffsetY: this.props.shadowOffsetY, backgroundType: this.props.backgroundType, backgroundColor: this.props.backgroundColor, backgroundImageUrl: this.props.backgroundImageUrl, fontColor: this.props.fontColor, isNodeClickable: this.props.isNodeClickable !== false, onFetchMembers: function (gid) { return _this.onFetchMembers(gid); }, onGetSiteUrl: function (gid) { return _this.onGetSiteUrl(gid); }, onNodeHover: function (n) { return _this.handleNodeHover(n); }, onNodeClick: function (n) { return _this.handleNodeClick(n); } }));
+        return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", { className: wrapperClass },
+            displayAsTile && tileBackgroundImageUrl && (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _GroupsSolarSystem_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].tileBackground, style: { backgroundImage: "url(".concat(tileBackgroundImageUrl, ")") } })),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { ref: this._containerRef, className: displayAsTile ? _GroupsSolarSystem_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].tileContent : undefined, style: { width: '100%', height: "".concat(height, "px"), position: 'relative' } },
                 loading && react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Loading your solar system..."),
                 error && react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { style: { color: 'red' } }, error),
-                !loading && !error && (layoutMode === 'Mesh' ? (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolarSystem_MeshLayout__WEBPACK_IMPORTED_MODULE_3__["default"], { data: graphData, width: width, height: height, groupNodeSize: groupNodeSize, baseFontSize: baseFontSize, linkLineType: (this.props.linkLineType || 'solid'), enableShadows: this.props.enableShadows, shadowColor: this.props.shadowColor, shadowBlur: this.props.shadowBlur, shadowOffsetX: this.props.shadowOffsetX, shadowOffsetY: this.props.shadowOffsetY, backgroundType: this.props.backgroundType, backgroundColor: this.props.backgroundColor, backgroundImageUrl: this.props.backgroundImageUrl, fontColor: this.props.fontColor, isNodeClickable: this.props.isNodeClickable !== false, onFetchMembers: function (gid) { return _this.onFetchMembers(gid); }, onGetSiteUrl: function (gid) { return _this.onGetSiteUrl(gid); }, onNodeHover: function (n) { return _this.handleNodeHover(n); }, onNodeClick: function (n) { return _this.handleNodeClick(n); } })) : (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SolarSystem_SolarLayout__WEBPACK_IMPORTED_MODULE_2__["default"], { data: graphData, width: width, height: height, groupNodeSize: groupNodeSize, baseFontSize: baseFontSize, animationMode: animationMode, animationSpeed: animationSpeed, centerNodeSize: centerNodeSize, showUserLabel: showUserLabel, linkLineType: this.props.linkLineType, enableShadows: this.props.enableShadows, shadowColor: this.props.shadowColor, shadowBlur: this.props.shadowBlur, shadowOffsetX: this.props.shadowOffsetX, shadowOffsetY: this.props.shadowOffsetY, backgroundType: this.props.backgroundType, backgroundColor: this.props.backgroundColor, backgroundImageUrl: this.props.backgroundImageUrl, fontColor: this.props.fontColor, isNodeClickable: this.props.isNodeClickable !== false, onFetchMembers: function (gid) { return _this.onFetchMembers(gid); }, onGetSiteUrl: function (gid) { return _this.onGetSiteUrl(gid); }, onNodeHover: function (n) { return _this.handleNodeHover(n); }, onNodeClick: function (n) { return _this.handleNodeClick(n); } }))))));
+                !loading && !error && layoutContent)));
     };
     return GroupsSolarSystem;
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component));
@@ -810,12 +829,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 __webpack_require__(/*! ./GroupsSolarSystem.module.css */ 887);
 var styles = {
-    groupsSolarSystem: 'groupsSolarSystem_d829f377',
-    teams: 'teams_d829f377',
-    welcome: 'welcome_d829f377',
-    welcomeImage: 'welcomeImage_d829f377',
-    links: 'links_d829f377',
-    forceDefaultCursor: 'forceDefaultCursor_d829f377'
+    groupsSolarSystem: 'groupsSolarSystem_a0468e83',
+    teams: 'teams_a0468e83',
+    welcome: 'welcome_a0468e83',
+    welcomeImage: 'welcomeImage_a0468e83',
+    links: 'links_a0468e83',
+    forceDefaultCursor: 'forceDefaultCursor_a0468e83',
+    tile: 'tile_a0468e83',
+    tileBackground: 'tileBackground_a0468e83',
+    tileContent: 'tileContent_a0468e83'
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (styles);
 
@@ -936,7 +958,9 @@ var __assign = (undefined && undefined.__assign) || function () {
 
 var useState = react__WEBPACK_IMPORTED_MODULE_0__.useState;
 var MeshLayout = function (props) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var fgRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+    // eslint-disable-next-line @rushstack/no-new-null
     var _a = useState(null), hoveredNode = _a[0], setHoveredNode = _a[1];
     var _b = useState({ x: 0, y: 0 }), mousePos = _b[0], setMousePos = _b[1];
     // Process Data: Remove User Node, Generate Mesh Links
@@ -948,6 +972,7 @@ var MeshLayout = function (props) {
             .filter(function (n) { return !n.isUser; })
             .map(function (n) { return (__assign(__assign({}, n), { fx: undefined, fy: undefined })); }); // Ensure no fixed positions
         // 2. Generate Links (Ring Lattice / Small World)
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var links = [];
         var k = 2; // Connect to 2 nearest neighbors
         // Sort to ensure deterministic linking (e.g. alphabetical or ID)
@@ -989,6 +1014,7 @@ var MeshLayout = function (props) {
             }, 500);
         }
     }, [processedData]);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-function-return-type
     var customNodeCanvas = function (node, ctx, globalScale) {
         (0,_utils_nodeRenderer__WEBPACK_IMPORTED_MODULE_2__.renderCustomNode)(node, ctx, globalScale, {
             centerNodeSize: 0,
@@ -1004,6 +1030,7 @@ var MeshLayout = function (props) {
             shadowOffsetY: props.shadowOffsetY || 3
         });
     };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-function-return-type
     var customNodeHitArea = function (node, color, ctx) {
         var currentZoom = fgRef.current ? fgRef.current.zoom() : 1;
         (0,_utils_nodeRenderer__WEBPACK_IMPORTED_MODULE_2__.renderNodeHitArea)(node, color, ctx, currentZoom, {
@@ -1024,6 +1051,7 @@ var MeshLayout = function (props) {
     var handleMouseMove = function (event) {
         setMousePos({ x: event.clientX, y: event.clientY });
     };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var handleNodeHover = function (node) {
         setHoveredNode(node);
         props.onNodeHover(node);
@@ -1108,9 +1136,11 @@ var __assign = (undefined && undefined.__assign) || function () {
 
 var useState = react__WEBPACK_IMPORTED_MODULE_0__.useState;
 var SolarLayout = function (props) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var fgRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
     var requestRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
     var isPausedRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
+    // eslint-disable-next-line @rushstack/no-new-null
     var _a = useState(null), hoveredNode = _a[0], setHoveredNode = _a[1];
     var _b = useState({ x: 0, y: 0 }), mousePos = _b[0], setMousePos = _b[1];
     var frameRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(0);
@@ -1142,7 +1172,9 @@ var SolarLayout = function (props) {
             minRy = Math.max(userSizeRadius + 20, absoluteMaxRy - 20);
         var maxRx = Math.max(minRx, absoluteMaxRx * 0.9);
         var maxRy = Math.max(minRy, absoluteMaxRy * 0.9);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var groupNodes = processedData.nodes.filter(function (n) { return !n.isUser; });
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var userNode = processedData.nodes.filter(function (n) { return n.isUser; })[0];
         if (userNode) {
             userNode.fx = 0;
@@ -1150,6 +1182,7 @@ var SolarLayout = function (props) {
         }
         var nodeCount = groupNodes.length;
         if (nodeCount > 0) {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             groupNodes.forEach(function (node, i) {
                 var t = nodeCount > 1 ? i / (nodeCount - 1) : 0.0;
                 if (typeof node.orbitAngle === 'undefined') {
@@ -1182,6 +1215,7 @@ var SolarLayout = function (props) {
             if (!isPausedRef.current) {
                 frameRef.current++;
                 var speedMultiplier_1 = 1 + (props.animationSpeed || 0) / 100;
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 groupNodes.forEach(function (node, i) {
                     if (props.animationMode === 'Orbit') {
                         node.orbitAngle += node.orbitSpeed * speedMultiplier_1;
@@ -1224,6 +1258,7 @@ var SolarLayout = function (props) {
         }
     }, [props.width, props.height]); // Re-run on resize
     // Shared Node Render Pass-through
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-function-return-type
     var customNodeCanvas = function (node, ctx, globalScale) {
         (0,_utils_nodeRenderer__WEBPACK_IMPORTED_MODULE_2__.renderCustomNode)(node, ctx, globalScale, {
             centerNodeSize: props.centerNodeSize,
@@ -1239,6 +1274,7 @@ var SolarLayout = function (props) {
             fixedScreenSize: true
         });
     };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-function-return-type
     var customNodeHitArea = function (node, color, ctx) {
         var currentZoom = fgRef.current ? fgRef.current.zoom() : 1;
         (0,_utils_nodeRenderer__WEBPACK_IMPORTED_MODULE_2__.renderNodeHitArea)(node, color, ctx, currentZoom, {
@@ -1259,6 +1295,7 @@ var SolarLayout = function (props) {
     var handleMouseMove = function (event) {
         setMousePos({ x: event.clientX, y: event.clientY });
     };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var handleNodeHover = function (node) {
         isPausedRef.current = !!node;
         setHoveredNode(node);
@@ -1302,7 +1339,7 @@ var SolarLayout = function (props) {
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_force_graph_2d__WEBPACK_IMPORTED_MODULE_3__["default"], { ref: fgRef, width: props.width, height: props.height, graphData: processedData, nodeCanvasObject: customNodeCanvas, nodePointerAreaPaint: customNodeHitArea, nodeLabel: function () { return ''; }, linkDirectionalArrowLength: 0, linkLineDash: getLinkLineDash(), linkWidth: 0.5, linkColor: function () { return getLinkColor(); }, backgroundColor: getBackgroundColor(), d3AlphaDecay: 0, d3VelocityDecay: 0, 
                 // Interaction
                 enableZoomInteraction: false, enablePanInteraction: false, 
-                // @ts-ignore
+                // @ts-expect-error d3AlphaTarget property exists on the force graph instance
                 d3AlphaTarget: 0.1, onEngineStop: function () {
                     if (fgRef.current)
                         fgRef.current.d3ReheatSimulation();
@@ -1379,10 +1416,11 @@ var renderCustomNode = function (node, ctx, globalScale, options) {
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
         ctx.clip();
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         try {
             ctx.drawImage(node.img, node.x - size, node.y - size, size * 2, size * 2);
         }
-        catch (e) { }
+        catch (e) { /* ignore */ }
     }
     else {
         ctx.fillStyle = node.isUser ? 'orange' : '#0078d4';
@@ -20170,6 +20208,7 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
             ? this.properties.groupIds.split(',').map(function (s) { return s.trim(); }).filter(function (s) { return s; })
             : [];
         // Choose service instance
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var service = this._mockGraphService || this._graphService;
         var element = react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_GroupsSolarSystem__WEBPACK_IMPORTED_MODULE_6__["default"], {
             description: this.properties.description,
@@ -20201,7 +20240,9 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
             fontColor: this.properties.fontColor || '#000000',
             isNodeClickable: this.properties.isNodeClickable !== false, // Default true if undefined
             showMeetingCycle: this.properties.showMeetingCycle,
-            meetingCyclePropertyName: this.properties.meetingCyclePropertyName
+            meetingCyclePropertyName: this.properties.meetingCyclePropertyName,
+            displayAsTile: this.properties.displayAsTile,
+            tileBackgroundImageUrl: this.properties.tileBackgroundImageUrl || ''
         });
         react_dom__WEBPACK_IMPORTED_MODULE_1__.render(element, this.domElement);
     };
@@ -20219,6 +20260,7 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
         // PAGE 1: Configuration & Content
         var _a;
         // Group 1: Data Source
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var dataSourceFields = [
             (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)('description', {
                 label: GroupsSolarSystemWebPartStrings__WEBPACK_IMPORTED_MODULE_5__.DescriptionFieldLabel
@@ -20244,6 +20286,7 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
             }));
         }
         // Group 2: Layout & Display
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var layoutDisplayFields = [
             (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneChoiceGroup)('layoutMode', {
                 label: 'Layout Mode',
@@ -20251,9 +20294,21 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
                     { key: 'Solar', text: 'Solar System' },
                     { key: 'Mesh', text: 'Mesh Network' }
                 ]
+            }),
+            (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneToggle)('displayAsTile', {
+                label: 'Als Kachel darstellen',
+                checked: false
             })
         ];
+        // Tile background image (only visible when displayAsTile is true)
+        if (this.properties.displayAsTile) {
+            layoutDisplayFields.push((0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneTextField)('tileBackgroundImageUrl', {
+                label: 'Kachel Hintergrundbild URL',
+                description: 'URL zu einem Bild für den Kachel-Hintergrund'
+            }));
+        }
         // Only show animation settings for Solar mode
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var groupMetadataFields = [
             (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneToggle)('showMeetingCycle', {
                 label: 'Show Meeting Cycle (Tooltip)'
@@ -20311,6 +20366,7 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
         }
         // PAGE 2: Visual Customization
         // Group 3: Center Node (Solar mode specific)
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var centerNodeFields = [
             (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneToggle)('useCustomCenter', {
                 label: 'Use Custom Center Node',
@@ -20336,6 +20392,7 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
             }));
         }
         // Group 4: Node Styling
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var nodeStylingFields = [
             (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneSlider)('groupNodeSize', {
                 label: 'Group Node Size',
@@ -20361,6 +20418,7 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
             })
         ];
         // Group 5: Link Styling
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var linkStylingFields = [
             (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneChoiceGroup)('linkLineType', {
                 label: 'Link Line Type',
@@ -20372,6 +20430,7 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
             })
         ];
         // Group 6: Shadow Effects
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var shadowFields = [
             (0,_microsoft_sp_property_pane__WEBPACK_IMPORTED_MODULE_3__.PropertyPaneToggle)('enableShadows', {
                 label: 'Enable Shadows'
@@ -20406,6 +20465,7 @@ var GroupsSolarSystemWebPart = /** @class */ (function (_super) {
             })
         ];
         // Build pages array
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         var pages = [
             {
                 header: {

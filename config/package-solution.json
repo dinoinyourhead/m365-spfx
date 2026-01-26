@@ -3,7 +3,7 @@
   "solution": {
     "name": "m-365-groups-solar-system-client-side-solution",
     "id": "c5973ff4-7fd1-4713-b986-dd56687e154f",
-    "version": "1.1.0.0",
+    "version": "1.2.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,

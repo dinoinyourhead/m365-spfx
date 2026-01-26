@@ -31,4 +31,7 @@ export interface IGroupsSolarSystemProps {
   isNodeClickable?: boolean;
   showMeetingCycle?: boolean;
   meetingCyclePropertyName?: string;
+  // Tile display
+  displayAsTile?: boolean;
+  tileBackgroundImageUrl?: string;
 }

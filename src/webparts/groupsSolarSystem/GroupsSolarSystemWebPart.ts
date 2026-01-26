@@ -52,6 +52,9 @@ export interface IGroupsSolarSystemWebPartProps {
   isNodeClickable: boolean;
   showMeetingCycle: boolean;
   meetingCyclePropertyName: string;
+  // Tile display
+  displayAsTile: boolean;
+  tileBackgroundImageUrl: string;
 }
 
 export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGroupsSolarSystemWebPartProps> {
@@ -111,7 +114,9 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
         fontColor: this.properties.fontColor || '#000000',
         isNodeClickable: this.properties.isNodeClickable !== false, // Default true if undefined
         showMeetingCycle: this.properties.showMeetingCycle,
-        meetingCyclePropertyName: this.properties.meetingCyclePropertyName
+        meetingCyclePropertyName: this.properties.meetingCyclePropertyName,
+        displayAsTile: this.properties.displayAsTile,
+        tileBackgroundImageUrl: this.properties.tileBackgroundImageUrl || ''
       }
     );
 
@@ -170,8 +175,22 @@ export default class GroupsSolarSystemWebPart extends BaseClientSideWebPart<IGro
           { key: 'Solar', text: 'Solar System' },
           { key: 'Mesh', text: 'Mesh Network' }
         ]
+      }),
+      PropertyPaneToggle('displayAsTile', {
+        label: 'Als Kachel darstellen',
+        checked: false
       })
     ];
+
+    // Tile background image (only visible when displayAsTile is true)
+    if (this.properties.displayAsTile) {
+      layoutDisplayFields.push(
+        PropertyPaneTextField('tileBackgroundImageUrl', {
+          label: 'Kachel Hintergrundbild URL',
+          description: 'URL zu einem Bild für den Kachel-Hintergrund'
+        })
+      );
+    }
 
     // Only show animation settings for Solar mode
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
